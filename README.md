@@ -3,3 +3,4 @@
 # TEAM 3 MEMBERS 
  - Jerry Kaufman
  - Scarlette Leonard
+ - Emma Zervanos
