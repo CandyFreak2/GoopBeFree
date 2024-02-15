@@ -12,7 +12,7 @@ public class HealthSystem : MonoBehaviour
 
     void Start()
     {
-        playerCurrentHealth = maxPlayerHealth[levelNum];
+        playerCurrentHealth = maxPlayerHealth[1];
     }
 
     public static float GetCurrentHealth() { return playerCurrentHealth; }

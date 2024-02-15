@@ -5,16 +5,17 @@ public class HealthManager : MonoBehaviour
 {
     public Image healthBar;
     private float healthAmount = HealthSystem.GetCurrentHealth();
+    public GameOverScript gameOver;
+
+    void Start()
+    {
+        // Deactivate the game over screen at the start
+        gameOver.gameObject.SetActive(false);
+    }
 
     // Update is called once per frame
-    [System.Obsolete]
     void Update()
     {
-        if (healthAmount <= 0)
-        {
-            Application.LoadLevel(Application.loadedLevel);
-        }
-
         if (Input.GetKeyUp(KeyCode.H)) { Heal(0.5f); }
         if (Input.GetKeyUp(KeyCode.T)) { TakeDamage(0.5f); }
     }
@@ -24,10 +25,12 @@ public class HealthManager : MonoBehaviour
         healthAmount -= damage;
         healthBar.fillAmount = healthAmount / HealthSystem.getMaxHealth();
         Debug.Log("Ouch Level:" + healthAmount);
+
         if (healthAmount <= 0)
         {
-            // Implement other stuff
+            healthAmount = 0;
             Debug.Log("HOW'D YOU DIE ITS A DEV ENV?!?!?!");
+            gameOver.Setup();
         }
     }
 
