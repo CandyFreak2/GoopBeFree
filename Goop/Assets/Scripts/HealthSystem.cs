@@ -7,10 +7,9 @@ using UnityEngine;
 public class HealthSystem : MonoBehaviour
 {
     private static float playerCurrentHealth = 0;
-    private static int[] maxPlayerHealth = { 10, 15, 20};
+    private static int[] maxPlayerHealth = { 10, 15, 20, 25};
     [SerializeField] private static int levelNum;
 
-    // Start is called before the first frame update
     void Start()
     {
         playerCurrentHealth = maxPlayerHealth[levelNum];
@@ -20,11 +19,6 @@ public class HealthSystem : MonoBehaviour
 
     public static int getMaxHealth()
     {
-        return maxPlayerHealth[getLevelNum()];
-    }
-
-    public static int getLevelNum()
-    {
-        return levelNum;
+        return maxPlayerHealth[levelNum];
     }
 }

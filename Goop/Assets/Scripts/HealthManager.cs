@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,12 +5,6 @@ public class HealthManager : MonoBehaviour
 {
     public Image healthBar;
     private float healthAmount = HealthSystem.GetCurrentHealth();
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     [System.Obsolete]
@@ -31,10 +23,11 @@ public class HealthManager : MonoBehaviour
     {
         healthAmount -= damage;
         healthBar.fillAmount = healthAmount / HealthSystem.getMaxHealth();
+        Debug.Log("Ouch Level:" + healthAmount);
         if (healthAmount <= 0)
         {
-            // Implement other stuffz
-            Application.Quit();
+            // Implement other stuff
+            Debug.Log("HOW'D YOU DIE ITS A DEV ENV?!?!?!");
         }
     }
 
@@ -43,5 +36,6 @@ public class HealthManager : MonoBehaviour
         healthAmount += healthIncrease;
         healthAmount = Mathf.Clamp(healthAmount, 0, HealthSystem.getMaxHealth());
         healthBar.fillAmount = healthAmount / HealthSystem.getMaxHealth();
+        Debug.Log("Player Healed:" + healthAmount);
     }
 }
