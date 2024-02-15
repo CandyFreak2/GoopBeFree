@@ -10,14 +10,14 @@ public class HealthSystem : MonoBehaviour
     private static int[] maxPlayerHealth = { 10, 15, 20, 25};
     [SerializeField] private static int levelNum;
 
-    void Start()
+    void Awake()
     {
-        playerCurrentHealth = maxPlayerHealth[1];
+        playerCurrentHealth = 10; // maxPlayerHealth[levelNum]
     }
 
     public static float GetCurrentHealth() { return playerCurrentHealth; }
 
-    public static int getMaxHealth()
+    public static int GetMaxHealth()
     {
         return maxPlayerHealth[levelNum];
     }
