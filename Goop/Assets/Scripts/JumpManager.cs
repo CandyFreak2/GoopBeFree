@@ -13,33 +13,54 @@ public class JumpManager : MonoBehaviour
         {
             if (!goopObject.TryGetComponent(out goopMovement))
             {
-                Debug.LogError("GoopMovement component not found on the object with tag 'GoopPlayer'");
+                Debug.LogError("GoopMovement component not found on the object with tag 'Player'");
             }
         }
         else
         {
-            Debug.LogError("GameObject with tag 'GoopPlayer' not found");
+            Debug.LogError("GameObject with tag 'Player' not found");
         }
     }
 
     void Update()
     {
-        if (goopMovement.IsJumping())
+        if (goopMovement != null)
         {
-            ChargeTimeBar();
+            if (goopMovement.IsJumping())
+            {
+                ChargeTimeBar();
+            }
+            else
+            {
+                jumpBar.fillAmount = 0f;
+            }
         }
         else
         {
-            jumpBar.fillAmount = 0f;
+            Debug.LogWarning("GoopMovement component is not initialized.");
         }
     }
 
     void ChargeTimeBar()
     {
-        float jumpAmount = goopMovement.GetChargeTime();
-        float maxChargeTime = goopMovement.GetMaxChargeTime();
+        if (jumpBar != null)
+        {
+            if (goopMovement != null)
+            {
+                float jumpAmount = goopMovement.GetChargeTime();
+                float maxChargeTime = goopMovement.GetMaxChargeTime();
 
-        float fillAmount = Mathf.Clamp01(jumpAmount / maxChargeTime);
-        jumpBar.fillAmount = fillAmount;
+                float fillAmount = Mathf.Clamp01(jumpAmount / maxChargeTime);
+                jumpBar.fillAmount = fillAmount;
+            }
+            else
+            {
+                Debug.LogWarning("GoopMovement component is not initialized.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("jumpBar reference is null.");
+        }
     }
 }

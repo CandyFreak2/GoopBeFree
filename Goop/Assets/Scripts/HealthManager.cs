@@ -69,13 +69,15 @@ public class HealthManager : MonoBehaviour
 
     void UpdateHealthBar()
     {
-        if (healthSystem != null)
+        if (healthBar != null)
         {
-            healthBar.fillAmount = healthSystem.GetCurrentHealth() / healthSystem.GetMaxHealth();
+            float maxHealth = healthSystem.GetMaxHealth();
+            float currentHealth = healthSystem.GetCurrentHealth();
+            healthBar.fillAmount = currentHealth / maxHealth;
         }
         else
         {
-            Debug.LogWarning("HealthSystem component is not attached or initialized.");
+            Debug.LogWarning("Health bar reference is null.");
         }
     }
 }
