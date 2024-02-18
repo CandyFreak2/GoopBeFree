@@ -4,13 +4,14 @@ using UnityEngine.UI;
 public class HealthManager : MonoBehaviour
 {
     public Image healthBar;
-    private float healthAmount = HealthSystem.GetCurrentHealth();
-    public GameOverScript gameOver;
+    //public GameOverScript gameOver;
+    private HealthSystem healthSystem;
 
-    void Start()
+    void Awake()
     {
+        healthSystem = GetComponent<HealthSystem>();
         // Deactivate the game over screen at the start
-        gameOver.gameObject.SetActive(false);
+        //gameOver.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,23 +23,59 @@ public class HealthManager : MonoBehaviour
 
     void TakeDamage(float damage)
     {
-        healthAmount -= damage;
-        healthBar.fillAmount = healthAmount / HealthSystem.getMaxHealth();
-        Debug.Log("Ouch Level:" + healthAmount);
-
-        if (healthAmount <= 0)
+        if (healthSystem != null)
         {
-            healthAmount = 0;
-            Debug.Log("HOW'D YOU DIE ITS A DEV ENV?!?!?!");
-            gameOver.Setup();
+            healthSystem.SetCurrentHealth(-damage);
+            UpdateHealthBar();
+            Debug.Log("Ouch Level:" + healthSystem.GetCurrentHealth());
+
+            if (healthSystem.GetCurrentHealth() <= 0)
+            {
+                healthSystem.ResetHealth();
+                Debug.Log("HOW'D YOU DIE ITS A DEV ENV?!?!?!");
+                //gameOver.Setup();
+            }
+        }
+        else
+        {
+            Debug.LogWarning("HealthSystem component is not attached or initialized.");
         }
     }
 
     void Heal(float healthIncrease)
     {
-        healthAmount += healthIncrease;
-        healthAmount = Mathf.Clamp(healthAmount, 0, HealthSystem.getMaxHealth());
-        healthBar.fillAmount = healthAmount / HealthSystem.getMaxHealth();
-        Debug.Log("Player Healed:" + healthAmount);
+        if (healthSystem != null)
+        {
+            float currentHealth = healthSystem.GetCurrentHealth();
+            float maxHealth = healthSystem.GetMaxHealth();
+            float amountToHeal = Mathf.Min(healthIncrease, maxHealth - currentHealth);
+            if (amountToHeal > 0)
+            {
+                healthSystem.SetCurrentHealth(amountToHeal);
+                UpdateHealthBar();
+                Debug.Log("Player Healed:" + healthSystem.GetCurrentHealth());
+            }
+            else
+            {
+                Debug.Log("Player is already at full health or exceeded maximum health.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("HealthSystem component is not attached or initialized.");
+        }
+    }
+
+
+    void UpdateHealthBar()
+    {
+        if (healthSystem != null)
+        {
+            healthBar.fillAmount = healthSystem.GetCurrentHealth() / healthSystem.GetMaxHealth();
+        }
+        else
+        {
+            Debug.LogWarning("HealthSystem component is not attached or initialized.");
+        }
     }
 }
