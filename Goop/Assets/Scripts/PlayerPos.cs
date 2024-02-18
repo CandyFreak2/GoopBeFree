@@ -10,10 +10,13 @@ public class PlayerPos : MonoBehaviour
 
     void Start()
     {
-        gameMaster = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        transform.position = gameMaster.lastCheckPoint;
+        if (gameMaster != null)
+        {
+            gameMaster = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+            transform.position = gameMaster.lastCheckPoint;
 
-        healthSystem = GetComponent<HealthSystem>();
+            healthSystem = GetComponent<HealthSystem>();
+        }
     }
 
     private void Update()

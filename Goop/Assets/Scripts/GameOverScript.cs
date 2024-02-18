@@ -5,18 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScript : MonoBehaviour
 {
-    public void Setup()
+    public GameObject gameOverUI;
+
+    void Start()
     {
-        gameObject.SetActive(true);
+        gameOverUI.SetActive(false);
+    }
+
+    public void GameOver()
+    {
+        gameOverUI.SetActive(true);
     }
 
     public void RestartButton()
     {
-        SceneManager.LoadScene("LevelOne");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void ExitButton()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainScreen");
     }
 }

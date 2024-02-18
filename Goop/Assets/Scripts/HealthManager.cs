@@ -4,17 +4,26 @@ using UnityEngine.UI;
 public class HealthManager : MonoBehaviour
 {
     public Image healthBar;
-    //public GameOverScript gameOver;
+    public GameOverScript gameOver;
     private HealthSystem healthSystem;
+    private GoopMovement goopMovement;
+    private bool isGoopDead = false;
 
     void Awake()
     {
         healthSystem = GetComponent<HealthSystem>();
-        // Deactivate the game over screen at the start
-        //gameOver.gameObject.SetActive(false);
+        GameObject goopObject = GameObject.FindWithTag("Player");
+        if (goopObject != null)
+        {
+            goopMovement = goopObject.GetComponent<GoopMovement>();
+        }
+        else
+        {
+            Debug.LogWarning("GoopMovement script not found on any GameObject with the 'Player' tag.");
+        }
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyUp(KeyCode.H)) { Heal(0.5f); }
@@ -29,11 +38,19 @@ public class HealthManager : MonoBehaviour
             UpdateHealthBar();
             Debug.Log("Ouch Level:" + healthSystem.GetCurrentHealth());
 
-            if (healthSystem.GetCurrentHealth() <= 0)
+            if (healthSystem.GetCurrentHealth() <= 0 && !isGoopDead)
             {
+                isGoopDead = true;
+                gameOver.GameOver();
                 healthSystem.ResetHealth();
-                Debug.Log("HOW'D YOU DIE ITS A DEV ENV?!?!?!");
-                //gameOver.Setup();
+                if (goopMovement != null)
+                {
+                    goopMovement.SetIsGoopDead(isGoopDead);
+                }
+                else
+                {
+                    Debug.LogWarning("GoopMovement script reference is null.");
+                }
             }
         }
         else
@@ -55,17 +72,12 @@ public class HealthManager : MonoBehaviour
                 UpdateHealthBar();
                 Debug.Log("Player Healed:" + healthSystem.GetCurrentHealth());
             }
-            else
-            {
-                Debug.Log("Player is already at full health or exceeded maximum health.");
-            }
         }
         else
         {
             Debug.LogWarning("HealthSystem component is not attached or initialized.");
         }
     }
-
 
     void UpdateHealthBar()
     {

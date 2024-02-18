@@ -4,7 +4,7 @@ public class HealthSystem : MonoBehaviour
 {
     private float playerCurrentHealth = 0;
     private int[] maxPlayerHealth = { 10, 15, 20, 25 };
-    [SerializeField] private int levelNum;
+    [SerializeField] private LevelSetter levelSetter;
 
     private void Awake()
     {
@@ -14,8 +14,7 @@ public class HealthSystem : MonoBehaviour
 
     private void OnLevelSet(int level)
     {
-        levelNum = level;
-        playerCurrentHealth = maxPlayerHealth[levelNum];
+        playerCurrentHealth = maxPlayerHealth[level];
         Debug.Log("Player Health: " + playerCurrentHealth);
     }
 
@@ -26,10 +25,17 @@ public class HealthSystem : MonoBehaviour
         playerCurrentHealth += change;
     }
 
-    public void ResetHealth() { playerCurrentHealth = maxPlayerHealth[levelNum]; }
+    public void ResetHealth()
+    {
+        LevelSetter levelSetter = GetComponent<LevelSetter>();
+        int currentLevel = levelSetter.GetLevelNumber();
+        playerCurrentHealth = maxPlayerHealth[currentLevel];
+    }
 
     public int GetMaxHealth()
     {
-        return maxPlayerHealth[levelNum];
+        LevelSetter levelSetter = GetComponent<LevelSetter>();
+        int currentLevel = levelSetter.GetLevelNumber();
+        return maxPlayerHealth[currentLevel];
     }
 }
