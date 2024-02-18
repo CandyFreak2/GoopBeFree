@@ -4,14 +4,16 @@ using UnityEngine.UI;
 public class JumpManager : MonoBehaviour
 {
     public Image jumpBar;
-    private GoopMovement goopMovement;
+    [SerializeField] public GoopMovement goopMovement;
 
     void Start()
     {
         GameObject goopObject = GameObject.FindWithTag("Player");
         if (goopObject != null)
         {
-            if (!goopObject.TryGetComponent(out goopMovement))
+            // Attempt to get the GoopMovement component
+            goopMovement = goopObject.GetComponent<GoopMovement>();
+            if (goopMovement == null)
             {
                 Debug.LogError("GoopMovement component not found on the object with tag 'Player'");
             }
@@ -24,6 +26,7 @@ public class JumpManager : MonoBehaviour
 
     void Update()
     {
+        // Ensure goopMovement is not null before accessing its methods
         if (goopMovement != null)
         {
             if (goopMovement.IsJumping())

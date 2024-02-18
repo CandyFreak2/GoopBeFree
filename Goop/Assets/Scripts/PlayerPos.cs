@@ -10,11 +10,13 @@ public class PlayerPos : MonoBehaviour
 
     void Start()
     {
-        if (gameMaster != null)
+        // Assign gameMaster before accessing it
+        if (GameObject.FindGameObjectWithTag("GM").TryGetComponent(out gameMaster))
         {
-            gameMaster = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+            // Move the player to the last checkpoint position
             transform.position = gameMaster.lastCheckPoint;
 
+            // Assign the HealthSystem component
             healthSystem = GetComponent<HealthSystem>();
         }
     }

@@ -8,15 +8,13 @@ public class VentCheckpoint : MonoBehaviour
 
     private void Start()
     {
-        if (gameMaster != null)
-        {
-            gameMaster = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        }
+        gameMaster = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) {
+        if (collision.CompareTag("Player") && gameMaster != null)
+        {
             gameMaster.lastCheckPoint = transform.position;
         }
     }
