@@ -4,29 +4,22 @@ using UnityEngine.UI;
 public class JumpManager : MonoBehaviour
 {
     public Image jumpBar;
-    [SerializeField] public GoopMovement goopMovement;
+    [SerializeField] private GoopMovement goopMovement;
 
     void Start()
     {
-        GameObject goopObject = GameObject.FindWithTag("Player");
-        if (goopObject != null)
+        if (goopMovement == null)
         {
-            // Attempt to get the GoopMovement component
-            goopMovement = goopObject.GetComponent<GoopMovement>();
-            if (goopMovement == null)
-            {
-                Debug.LogError("GoopMovement component not found on the object with tag 'Player'");
-            }
+            Debug.LogError("GoopMovement component is not assigned");
         }
         else
         {
-            Debug.LogError("GameObject with tag 'Player' not found");
+            Debug.Log("GoopMovement component is assigned");
         }
     }
 
     void Update()
     {
-        // Ensure goopMovement is not null before accessing its methods
         if (goopMovement != null)
         {
             if (goopMovement.IsJumping())
@@ -38,10 +31,10 @@ public class JumpManager : MonoBehaviour
                 jumpBar.fillAmount = 0f;
             }
         }
-        else
+        /*else
         {
             Debug.LogWarning("GoopMovement component is not initialized.");
-        }
+        }*/
     }
 
     void ChargeTimeBar()
