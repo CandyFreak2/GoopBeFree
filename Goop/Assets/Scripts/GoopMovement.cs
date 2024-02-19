@@ -3,12 +3,23 @@ using UnityEngine;
 public class GoopMovement : MonoBehaviour
 {
     private Rigidbody2D rigidBody;
-    private static bool isFacingRight = true, isJumping = false, isGrounded = false, isGoopDead = false, isClimbing = false;
-    private static float chargeTime = 0.0f, maxChargeTime = 5.0f;
-    private float minJumpForce = 2.5f, maxJumpForce = 12.0f, timeSinceLastCharge = 0.0f;
-    private const float chargeTimeDecayDelay = 3.0f;
-    public float playerSpeed = 3.5f, fallMultiplier = 2.5f, lowJumpMultiplier = 2.0f;
+    private static bool isFacingRight = true;
+    private static bool isJumping = false;
+    private static bool isGrounded = false;
+    private static bool isGoopDead = false;
+    private static bool isClimbing = false;
+
+    private static float chargeTime = 0.0f;
+    private static float maxChargeTime = 5.0f;
+    private static float timeSinceLastCharge = 0.0f;
+
+    private float minJumpForce = 2.5f;
+    private float maxJumpForce = 12.0f;
+    private float playerSpeed = 3.5f;
+    private float fallMultiplier = 2.5f;
+    private float lowJumpMultiplier = 2.0f;
     private float climbSpeed = 3.0f;
+    private const float chargeTimeDecayDelay = 3.0f;
 
     [SerializeField] private HealthSystem healthSystem;
 
@@ -25,8 +36,7 @@ public class GoopMovement : MonoBehaviour
 
             if (isClimbing)
             {
-                float verticalMovement = Input.GetAxisRaw("Vertical");
-                Climb(verticalMovement);
+                Climb(Input.GetAxisRaw("Vertical"));
             }
         }
     }
@@ -42,6 +52,7 @@ public class GoopMovement : MonoBehaviour
     private void HandleInput()
     {
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
+
         if (horizontalMovement != 0 && !isClimbing)
         {
             Flip(horizontalMovement > 0);
@@ -99,9 +110,7 @@ public class GoopMovement : MonoBehaviour
         if (GoopMovement.isFacingRight != isFacingRight)
         {
             GoopMovement.isFacingRight = isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1;
-            transform.localScale = localScale;
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
         }
     }
 
@@ -140,16 +149,13 @@ public class GoopMovement : MonoBehaviour
         }
     }
 
-    public float GetChargeTime() { return chargeTime; }
+    public float GetChargeTime() => chargeTime;
 
-    public float GetMaxChargeTime() { return maxChargeTime; }
+    public float GetMaxChargeTime() => maxChargeTime;
 
-    public bool IsJumping() { return isJumping; }
+    public bool IsJumping() => isJumping;
 
-    public bool IsOnGround() { return isGrounded; }
+    public bool IsOnGround() => isGrounded;
 
-    public void SetIsGoopDead(bool isDead)
-    {
-        isGoopDead = isDead;
-    }
+    public void SetIsGoopDead(bool isDead) => isGoopDead = isDead;
 }

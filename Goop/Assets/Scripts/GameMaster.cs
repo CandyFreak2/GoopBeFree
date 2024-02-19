@@ -9,12 +9,10 @@ public class GameMaster : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-        {
+        if (instance == null) {
             instance = this;
             DontDestroyOnLoad(instance);
-        } else
-        {
+        } else {
             DontDestroyOnLoad(instance); 
         }
     }
