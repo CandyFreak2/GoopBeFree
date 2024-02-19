@@ -1,24 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-// FUTURE DEVELOPMENT : PLAN IMPLEMENTATION SO LVL CAN BE DETECTED FOR INCREASE IN HEALTH
 
 public class HealthSystem : MonoBehaviour
 {
-    private static float playerCurrentHealth = 0;
-    private static int[] maxPlayerHealth = { 10, 15, 20, 25};
-    [SerializeField] private static int levelNum;
+    private float playerCurrentHealth = 0;
+    private int[] maxPlayerHealth = { 10, 15, 20, 25 };
+    [SerializeField] private LevelSetter levelSetter;
 
-    void Awake()
+    private void Awake()
     {
-        playerCurrentHealth = 10; // maxPlayerHealth[levelNum]
+        LevelSetter levelSetter = gameObject.AddComponent<LevelSetter>();
+        levelSetter.SetLevelCallback(OnLevelSet);
     }
 
-    public static float GetCurrentHealth() { return playerCurrentHealth; }
-
-    public static int GetMaxHealth()
+    private void OnLevelSet(int level)
     {
-        return maxPlayerHealth[levelNum];
+        playerCurrentHealth = maxPlayerHealth[level];
+        Debug.Log("Player Health: " + playerCurrentHealth);
+    }
+
+    public float GetCurrentHealth() { return playerCurrentHealth; }
+
+    public void SetCurrentHealth(float change)
+    {
+        playerCurrentHealth += change;
+    }
+
+    public void ResetHealth()
+    {
+        LevelSetter levelSetter = GetComponent<LevelSetter>();
+        int currentLevel = levelSetter.GetLevelNumber();
+        playerCurrentHealth = maxPlayerHealth[currentLevel];
+    }
+
+    public int GetMaxHealth()
+    {
+        LevelSetter levelSetter = GetComponent<LevelSetter>();
+        int currentLevel = levelSetter.GetLevelNumber();
+        return maxPlayerHealth[currentLevel];
     }
 }

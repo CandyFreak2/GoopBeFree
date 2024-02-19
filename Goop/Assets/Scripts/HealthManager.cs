@@ -4,15 +4,26 @@ using UnityEngine.UI;
 public class HealthManager : MonoBehaviour
 {
     public Image healthBar;
-    //public GameOverScript gameOver;
+    public GameOverScript gameOver;
+    private HealthSystem healthSystem;
+    private GoopMovement goopMovement;
+    private bool isGoopDead = false;
 
-    void Start()
+    void Awake()
     {
-        
-        //gameOver.gameObject.SetActive(false);
+        healthSystem = GetComponent<HealthSystem>();
+        GameObject goopObject = GameObject.FindWithTag("Player");
+        if (goopObject != null)
+        {
+            goopMovement = goopObject.GetComponent<GoopMovement>();
+        }
+        else
+        {
+            Debug.LogWarning("GoopMovement script not found on any GameObject with the 'Player' tag.");
+        }
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         // Update healthAmount in each frame
@@ -24,24 +35,64 @@ public class HealthManager : MonoBehaviour
 
     void TakeDamage(float damage)
     {
-        float healthAmount = HealthSystem.GetCurrentHealth();
-        healthAmount -= damage;
-        healthBar.fillAmount = healthAmount / HealthSystem.GetMaxHealth();
-        Debug.Log("Ouch Level:" + healthAmount);
-
-        if (healthAmount <= 0)
+        if (healthSystem != null)
         {
-            Debug.Log("HOW'D YOU DIE ITS A DEV ENV?!?!?!");
-            //gameOver.Setup();
+            healthSystem.SetCurrentHealth(-damage);
+            UpdateHealthBar();
+            Debug.Log("Ouch Level:" + healthSystem.GetCurrentHealth());
+
+            if (healthSystem.GetCurrentHealth() <= 0 && !isGoopDead)
+            {
+                isGoopDead = true;
+                gameOver.GameOver();
+                healthSystem.ResetHealth();
+                if (goopMovement != null)
+                {
+                    goopMovement.SetIsGoopDead(isGoopDead);
+                }
+                else
+                {
+                    Debug.LogWarning("GoopMovement script reference is null.");
+                }
+            }
+        }
+        else
+        {
+            Debug.LogWarning("HealthSystem component is not attached or initialized.");
         }
     }
 
     void Heal(float healthIncrease)
     {
-        float healthAmount = HealthSystem.GetCurrentHealth();
-        healthAmount += healthIncrease;
-        healthAmount = Mathf.Clamp(healthAmount, 0, HealthSystem.GetMaxHealth());
-        healthBar.fillAmount = healthAmount / HealthSystem.GetMaxHealth();
-        Debug.Log("Player Healed:" + healthAmount);
+        if (healthSystem != null)
+        {
+            float currentHealth = healthSystem.GetCurrentHealth();
+            float maxHealth = healthSystem.GetMaxHealth();
+            float amountToHeal = Mathf.Min(healthIncrease, maxHealth - currentHealth);
+            if (amountToHeal > 0)
+            {
+                healthSystem.SetCurrentHealth(amountToHeal);
+                UpdateHealthBar();
+                Debug.Log("Player Healed:" + healthSystem.GetCurrentHealth());
+            }
+        }
+        else
+        {
+            Debug.LogWarning("HealthSystem component is not attached or initialized.");
+        }
+    }
+
+    void UpdateHealthBar()
+    {
+        if (healthBar != null)
+        {
+            float maxHealth = healthSystem.GetMaxHealth();
+            float currentHealth = healthSystem.GetCurrentHealth();
+            healthBar.fillAmount = currentHealth / maxHealth;
+        }
+        else
+        {
+            Debug.LogWarning("Health bar reference is null.");
+        }
     }
 }

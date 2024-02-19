@@ -4,42 +4,59 @@ using UnityEngine.UI;
 public class JumpManager : MonoBehaviour
 {
     public Image jumpBar;
-    private GoopMovement goopMovement;
+    [SerializeField] private GoopMovement goopMovement;
 
     void Start()
     {
-        GameObject goopObject = GameObject.FindWithTag("Player");
-        if (goopObject != null)
+        if (goopMovement == null)
         {
-            if (!goopObject.TryGetComponent(out goopMovement))
-            {
-                Debug.LogError("GoopMovement component not found on the object with tag 'GoopPlayer'");
-            }
+            Debug.LogError("GoopMovement component is not assigned");
         }
         else
         {
-            Debug.LogError("GameObject with tag 'GoopPlayer' not found");
+            Debug.Log("GoopMovement component is assigned");
         }
     }
 
     void Update()
     {
-        if (goopMovement.IsJumping())
+        if (goopMovement != null)
         {
-            ChargeTimeBar();
+            if (goopMovement.IsJumping())
+            {
+                ChargeTimeBar();
+            }
+            else
+            {
+                jumpBar.fillAmount = 0f;
+            }
         }
-        else
+        /*else
         {
-            jumpBar.fillAmount = 0f;
-        }
+            Debug.LogWarning("GoopMovement component is not initialized.");
+        }*/
     }
 
     void ChargeTimeBar()
     {
-        float jumpAmount = goopMovement.GetChargeTime();
-        float maxChargeTime = goopMovement.GetMaxChargeTime();
+        if (jumpBar != null)
+        {
+            if (goopMovement != null)
+            {
+                float jumpAmount = goopMovement.GetChargeTime();
+                float maxChargeTime = goopMovement.GetMaxChargeTime();
 
-        float fillAmount = Mathf.Clamp01(jumpAmount / maxChargeTime);
-        jumpBar.fillAmount = fillAmount;
+                float fillAmount = Mathf.Clamp01(jumpAmount / maxChargeTime);
+                jumpBar.fillAmount = fillAmount;
+            }
+            else
+            {
+                Debug.LogWarning("GoopMovement component is not initialized.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("jumpBar reference is null.");
+        }
     }
 }

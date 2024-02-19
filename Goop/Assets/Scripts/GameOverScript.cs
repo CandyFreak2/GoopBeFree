@@ -5,18 +5,35 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScript : MonoBehaviour
 {
-    public void Setup()
+    public GameObject gameOverUI;
+    public GameObject goop;
+
+    void Start()
     {
-        gameObject.SetActive(true);
+        gameOverUI.SetActive(false);
+    }
+
+    public void GameOver()
+    {
+        gameOverUI.SetActive(true);
     }
 
     public void RestartButton()
     {
-        SceneManager.LoadScene("LevelOne");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (goop.TryGetComponent<Rigidbody>(out var goopRB))
+        {
+            goopRB.velocity = Vector2.zero;
+        }
+        if (goop.TryGetComponent<GoopMovement>(out var goopMovement))
+        {
+            goopMovement.SetIsGoopDead(false);
+        }
+
     }
 
     public void ExitButton()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainScreen");
     }
 }
