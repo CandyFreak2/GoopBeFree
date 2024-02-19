@@ -3,14 +3,14 @@ using UnityEngine;
 public class GoopMovement : MonoBehaviour
 {
     private Rigidbody2D rigidBody;
-    private static bool isFacingRight = true, isJumping = false, isGrounded = false, isGoopDead = false;
+    private static bool isFacingRight = true, isJumping = false, isGrounded = false, isGoopDead = false, isClimbing = false;
     private static float chargeTime = 0.0f, maxChargeTime = 5.0f;
     private float minJumpForce = 2.5f, maxJumpForce = 12.0f, timeSinceLastCharge = 0.0f;
     private const float chargeTimeDecayDelay = 3.0f;
     public float playerSpeed = 3.5f, fallMultiplier = 2.5f, lowJumpMultiplier = 2.0f;
     private float climbSpeed = 3.0f;
 
-    [SerializeField]public HealthSystem healthSystem;
+    [SerializeField] private HealthSystem healthSystem;
 
     private void Awake()
     {
@@ -19,67 +19,73 @@ public class GoopMovement : MonoBehaviour
 
     private void Update()
     {
-        // Check if the player is alive before allowing movement
         if (!isGoopDead)
         {
-            // Movement logic
-            float horizontalMovement = Input.GetAxisRaw("Horizontal");
-            if (horizontalMovement != 0)
-            {
-                Flip(horizontalMovement > 0);
-            }
+            HandleInput();
 
-            // Jump logic
-            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            if (isClimbing)
             {
-                isJumping = true;
-            }
-
-            if (Input.GetKey(KeyCode.Space) && isJumping && chargeTime < maxChargeTime)
-            {
-                chargeTime += Time.deltaTime;
-                timeSinceLastCharge = 0.0f;
-            }
-
-            if (Input.GetKeyUp(KeyCode.Space) && isJumping)
-            {
-                Jump();
-            }
-
-            if (!Input.GetKey(KeyCode.Space) && chargeTime > 0)
-            {
-                timeSinceLastCharge += Time.deltaTime;
-                if (timeSinceLastCharge >= chargeTimeDecayDelay)
-                {
-                    chargeTime -= Time.deltaTime;
-                    chargeTime = Mathf.Max(chargeTime, 0.0f);
-                }
+                float verticalMovement = Input.GetAxisRaw("Vertical");
+                Climb(verticalMovement);
             }
         }
     }
 
     private void FixedUpdate()
     {
-        // Only move if the player is alive
-        if (!isGoopDead)
+        if (!isGoopDead && !isClimbing)
         {
-            // Movement logic
-            float horizontalMovement = Input.GetAxisRaw("Horizontal");
-            rigidBody.velocity = new Vector2(horizontalMovement * playerSpeed, rigidBody.velocity.y);
+            ApplyPhysics();
+        }
+    }
 
-            // Jump logic
-            if (rigidBody.velocity.y < 0)
+    private void HandleInput()
+    {
+        float horizontalMovement = Input.GetAxisRaw("Horizontal");
+        if (horizontalMovement != 0 && !isClimbing)
+        {
+            Flip(horizontalMovement > 0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            isJumping = true;
+        }
+
+        if (Input.GetKey(KeyCode.Space) && isJumping && chargeTime < maxChargeTime)
+        {
+            chargeTime += Time.deltaTime;
+            timeSinceLastCharge = 0.0f;
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space) && isJumping)
+        {
+            Jump();
+        }
+
+        if (!Input.GetKey(KeyCode.Space) && chargeTime > 0)
+        {
+            timeSinceLastCharge += Time.deltaTime;
+            if (timeSinceLastCharge >= chargeTimeDecayDelay)
             {
-                rigidBody.velocity += (fallMultiplier - 1) * Physics2D.gravity.y * Time.fixedDeltaTime * Vector2.up;
-            }
-            else if (rigidBody.velocity.y > 0 && !Input.GetKey(KeyCode.Space) && !isGrounded)
-            {
-                rigidBody.velocity += (lowJumpMultiplier - 1) * Physics2D.gravity.y * Time.fixedDeltaTime * Vector2.up;
+                chargeTime -= Time.deltaTime;
+                chargeTime = Mathf.Max(chargeTime, 0.0f);
             }
         }
-        else
+    }
+
+    private void ApplyPhysics()
+    {
+        float horizontalMovement = Input.GetAxisRaw("Horizontal");
+        rigidBody.velocity = new Vector2(horizontalMovement * playerSpeed, rigidBody.velocity.y);
+
+        if (rigidBody.velocity.y < 0)
         {
-            rigidBody.velocity = Vector2.zero;
+            rigidBody.velocity += (fallMultiplier - 1) * Physics2D.gravity.y * Time.fixedDeltaTime * Vector2.up;
+        }
+        else if (rigidBody.velocity.y > 0 && !Input.GetKey(KeyCode.Space) && !isGrounded)
+        {
+            rigidBody.velocity += (lowJumpMultiplier - 1) * Physics2D.gravity.y * Time.fixedDeltaTime * Vector2.up;
         }
     }
 
@@ -144,6 +150,6 @@ public class GoopMovement : MonoBehaviour
 
     public void SetIsGoopDead(bool isDead)
     {
-       isGoopDead = isDead;
+        isGoopDead = isDead;
     }
 }

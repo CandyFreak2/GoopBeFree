@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScript : MonoBehaviour
 {
-    public GameObject gameOverUI;
-    public GameObject goop;
+    public GameObject gameOverUI, goop;
 
     void Start()
     {
