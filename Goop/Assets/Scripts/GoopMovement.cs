@@ -3,12 +3,12 @@ using UnityEngine;
 public class GoopMovement : MonoBehaviour
 {
     private Rigidbody2D rigidBody;
-    private static bool isFacingRight = true, isJumping = false, isGrounded = false;
+    private static bool isFacingRight = true, isJumping = false, isGrounded = false, isClimbing = false;
     private static float chargeTime = 0.0f, maxChargeTime = 5.0f;
     private float minJumpForce = 2.5f, maxJumpForce = 12.0f, timeSinceLastCharge = 0.0f;
     private const float chargeTimeDecayDelay = 3.0f;
-
     public float playerSpeed = 3.5f, fallMultiplier = 2.5f, lowJumpMultiplier = 2.0f;
+    private float climbSpeed = 3.0f;
 
     private void Awake()
     {
@@ -17,8 +17,24 @@ public class GoopMovement : MonoBehaviour
 
     private void Update()
     {
+        HandleInput();
+    }
+
+    private void FixedUpdate()
+    {
+        ApplyPhysics();
+    }
+
+    private void HandleInput()
+    {
+        float verticalMovement = Input.GetAxisRaw("Vertical");
+        if (verticalMovement != 0 && isClimbing)
+        {
+            Climb(verticalMovement);
+        }
+
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
-        if (horizontalMovement != 0)
+        if (horizontalMovement != 0 && !isClimbing)
         {
             Flip(horizontalMovement > 0);
         }
@@ -44,33 +60,40 @@ public class GoopMovement : MonoBehaviour
             timeSinceLastCharge += Time.deltaTime;
             if (timeSinceLastCharge >= chargeTimeDecayDelay)
             {
-                chargeTime -= Time.deltaTime; 
+                chargeTime -= Time.deltaTime;
                 chargeTime = Mathf.Max(chargeTime, 0.0f);
             }
         }
     }
 
-
-    private void FixedUpdate()
+    private void ApplyPhysics()
     {
-        float horizontalMovement = Input.GetAxisRaw("Horizontal");
-        rigidBody.velocity = new Vector2(horizontalMovement * playerSpeed, rigidBody.velocity.y);
+        if (!isClimbing)
+        {
+            float horizontalMovement = Input.GetAxisRaw("Horizontal");
+            rigidBody.velocity = new Vector2(horizontalMovement * playerSpeed, rigidBody.velocity.y);
 
-        if (rigidBody.velocity.y < 0)
-        {
-            rigidBody.velocity += (fallMultiplier - 1) * Physics2D.gravity.y * Time.fixedDeltaTime * Vector2.up;
-        }
-        else if (rigidBody.velocity.y > 0 && !Input.GetKey(KeyCode.Space) && !isGrounded)
-        {
-            rigidBody.velocity += (lowJumpMultiplier - 1) * Physics2D.gravity.y * Time.fixedDeltaTime * Vector2.up;
+            if (rigidBody.velocity.y < 0)
+            {
+                rigidBody.velocity += (fallMultiplier - 1) * Physics2D.gravity.y * Time.fixedDeltaTime * Vector2.up;
+            }
+            else if (rigidBody.velocity.y > 0 && !Input.GetKey(KeyCode.Space) && !isGrounded)
+            {
+                rigidBody.velocity += (lowJumpMultiplier - 1) * Physics2D.gravity.y * Time.fixedDeltaTime * Vector2.up;
+            }
         }
     }
 
-    private void Flip(bool right)
+    private void Climb(float verticalInput)
     {
-        if (isFacingRight != right)
+        rigidBody.velocity = new Vector2(rigidBody.velocity.x, verticalInput * climbSpeed);
+    }
+
+    private void Flip(bool isFacingRight)
+    {
+        if (GoopMovement.isFacingRight != isFacingRight)
         {
-            isFacingRight = right;
+            GoopMovement.isFacingRight = isFacingRight;
             Vector3 localScale = transform.localScale;
             localScale.x *= -1;
             transform.localScale = localScale;
@@ -82,7 +105,6 @@ public class GoopMovement : MonoBehaviour
         float normalizedCharge = Mathf.Clamp01(chargeTime / maxChargeTime);
         float jumpForce = Mathf.Lerp(minJumpForce, maxJumpForce, normalizedCharge);
 
-        // RESETS VELOCITY
         rigidBody.velocity = new Vector2(rigidBody.velocity.x, 0);
         rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         isJumping = false;
@@ -95,6 +117,10 @@ public class GoopMovement : MonoBehaviour
         {
             isGrounded = true;
         }
+        else if (collision.collider.CompareTag("Wall"))
+        {
+            isClimbing = true;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -102,6 +128,10 @@ public class GoopMovement : MonoBehaviour
         if (collision.collider.CompareTag("Ground"))
         {
             isGrounded = false;
+        }
+        else if (collision.collider.CompareTag("Wall"))
+        {
+            isClimbing = false;
         }
     }
 
