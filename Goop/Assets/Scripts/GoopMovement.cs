@@ -23,6 +23,8 @@ public class GoopMovement : MonoBehaviour
 
     [SerializeField] private HealthSystem healthSystem;
 
+    public Animator animator;
+
     private void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
@@ -52,26 +54,33 @@ public class GoopMovement : MonoBehaviour
     private void HandleInput()
     {
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMovement));
 
         if (horizontalMovement != 0 && !isClimbing)
         {
             Flip(horizontalMovement > 0);
+            
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             isJumping = true;
+            
+            
         }
 
         if (Input.GetKey(KeyCode.Space) && isJumping && chargeTime < maxChargeTime)
         {
+            animator.SetBool("ChargeJumping", true);
             chargeTime += Time.deltaTime;
             timeSinceLastCharge = 0.0f;
         }
 
         if (Input.GetKeyUp(KeyCode.Space) && isJumping)
         {
+            animator.SetBool("IsJumping", true);
             Jump();
+            
         }
 
         if (!Input.GetKey(KeyCode.Space) && chargeTime > 0)
@@ -123,6 +132,8 @@ public class GoopMovement : MonoBehaviour
         rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         isJumping = false;
         chargeTime = 0f;
+        
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -130,10 +141,14 @@ public class GoopMovement : MonoBehaviour
         if (collision.collider.CompareTag("Ground"))
         {
             isGrounded = true;
+
+            OnLanding();
         }
         else if (collision.collider.CompareTag("Wall"))
         {
             isClimbing = true;
+            OnLanding();
+
         }
     }
 
@@ -142,11 +157,19 @@ public class GoopMovement : MonoBehaviour
         if (collision.collider.CompareTag("Ground"))
         {
             isGrounded = false;
+            
+
         }
         else if (collision.collider.CompareTag("Wall"))
         {
             isClimbing = false;
         }
+    }
+
+    public void OnLanding ()
+    {
+        animator.SetBool("IsJumping", false);
+        animator.SetBool("ChargeJumping", false);
     }
 
     public float GetChargeTime() => chargeTime;
