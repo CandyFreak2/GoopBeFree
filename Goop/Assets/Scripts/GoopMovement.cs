@@ -25,11 +25,18 @@ public class GoopMovement : MonoBehaviour
 
     public Animator animator;
 
+    AudioSource audioData;
+
     private void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+        audioData = GetComponent<AudioSource>();
+        
+    }
     private void Update()
     {
         if (!isGoopDead)
@@ -64,11 +71,13 @@ public class GoopMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             isJumping = true;
+            audioData.Play(0);
         }
 
         if (Input.GetKey(KeyCode.Space) && isJumping && chargeTime < maxChargeTime)
         {
             animator.SetBool("ChargeJumping", true);
+            
             chargeTime += Time.deltaTime;
             timeSinceLastCharge = 0.0f;
         }
@@ -76,6 +85,7 @@ public class GoopMovement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space) && isJumping)
         {
             animator.SetBool("IsJumping", true);
+            
             Jump();
             
         }
