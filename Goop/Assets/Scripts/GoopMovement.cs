@@ -18,7 +18,7 @@ public class GoopMovement : MonoBehaviour
     [SerializeField] public float playerSpeed = 4f;
     private float fallMultiplier = 2.5f;
     private float lowJumpMultiplier = 2.0f;
-    private float climbSpeed = 3.0f;
+    private float climbSpeed = 3.5f;
     private const float chargeTimeDecayDelay = 3.0f;
 
     [SerializeField] private HealthSystem healthSystem;
@@ -59,14 +59,11 @@ public class GoopMovement : MonoBehaviour
         if (horizontalMovement != 0 && !isClimbing)
         {
             Flip(horizontalMovement > 0);
-            
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             isJumping = true;
-            
-            
         }
 
         if (Input.GetKey(KeyCode.Space) && isJumping && chargeTime < maxChargeTime)

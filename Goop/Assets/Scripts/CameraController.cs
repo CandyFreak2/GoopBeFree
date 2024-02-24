@@ -3,6 +3,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private float cameraSpeed;
+    /*[SerializeField] private GoopMovement goop;*/
 
     public Transform player;
     public Vector2 offset;
