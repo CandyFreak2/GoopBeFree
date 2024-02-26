@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Wall
   - GM
+  - Win
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - Water
   - UI
   - Wall
-  - 
+  - background
   - 
   - 
   - 
@@ -44,6 +45,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Map
+    uniqueID: 3493606315
+    locked: 0
   - name: Directional
     uniqueID: 2775023239
+    locked: 0
+  - name: Player
+    uniqueID: 2884334655
+    locked: 0
+  - name: UI
+    uniqueID: 580032853
     locked: 0

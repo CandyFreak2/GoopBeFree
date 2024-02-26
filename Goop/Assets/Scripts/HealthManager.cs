@@ -29,8 +29,8 @@ public class HealthManager : MonoBehaviour
         // Update healthAmount in each frame
         //float healthAmount = HealthSystem.GetCurrentHealth();
 
-        if (Input.GetKeyUp(KeyCode.H)) { Heal(0.5f); }
-        if (Input.GetKeyUp(KeyCode.T)) { TakeDamage(0.5f); }
+        /*if (Input.GetKeyUp(KeyCode.H)) { Heal(0.5f); }
+        if (Input.GetKeyUp(KeyCode.T)) { TakeDamage(0.5f); }*/
     }
 
     void TakeDamage(float damage)

@@ -15,7 +15,7 @@ public class HealthSystem : MonoBehaviour
     private void OnLevelSet(int level)
     {
         playerCurrentHealth = maxPlayerHealth[level];
-        Debug.Log("Player Health: " + playerCurrentHealth);
+        //Debug.Log("Player Health: " + playerCurrentHealth);
     }
 
     public float GetCurrentHealth() { return playerCurrentHealth; }

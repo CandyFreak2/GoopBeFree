@@ -3,15 +3,13 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private float cameraSpeed;
-    private float currentXPos;
-    private Vector3 velocity = Vector3.zero;
+    /*[SerializeField] private GoopMovement goop;*/
 
-    // Update is called once per frame
-    void Update() {
-        transform.position = Vector3.SmoothDamp(transform.position, new Vector3(currentXPos, transform.position.y, transform.position.z), ref velocity, cameraSpeed * Time.deltaTime);
-    }
+    public Transform player;
+    public Vector2 offset;
 
-    void TransitionToNewSection(Transform newSection) { 
-        currentXPos = newSection.position.x;
+    void Update()
+    {
+        transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.y, -10);
     }
 }

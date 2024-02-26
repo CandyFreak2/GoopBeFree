@@ -14,20 +14,29 @@ public class GoopMovement : MonoBehaviour
     private static float timeSinceLastCharge = 0.0f;
 
     private float minJumpForce = 2.5f;
-    private float maxJumpForce = 12.0f;
-    private float playerSpeed = 3.5f;
+    private float maxJumpForce = 15.0f;
+    [SerializeField] public float playerSpeed = 4f;
     private float fallMultiplier = 2.5f;
     private float lowJumpMultiplier = 2.0f;
-    private float climbSpeed = 3.0f;
+    private float climbSpeed = 3.5f;
     private const float chargeTimeDecayDelay = 3.0f;
 
     [SerializeField] private HealthSystem healthSystem;
+
+    public Animator animator;
+
+    AudioSource audioData;
 
     private void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
     }
 
+    private void Start()
+    {
+        audioData = GetComponent<AudioSource>();
+        
+    }
     private void Update()
     {
         if (!isGoopDead)
@@ -52,6 +61,7 @@ public class GoopMovement : MonoBehaviour
     private void HandleInput()
     {
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMovement));
 
         if (horizontalMovement != 0 && !isClimbing)
         {
@@ -61,17 +71,23 @@ public class GoopMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             isJumping = true;
+            audioData.Play(0);
         }
 
         if (Input.GetKey(KeyCode.Space) && isJumping && chargeTime < maxChargeTime)
         {
+            animator.SetBool("ChargeJumping", true);
+            
             chargeTime += Time.deltaTime;
             timeSinceLastCharge = 0.0f;
         }
 
         if (Input.GetKeyUp(KeyCode.Space) && isJumping)
         {
+            animator.SetBool("IsJumping", true);
+            
             Jump();
+            
         }
 
         if (!Input.GetKey(KeyCode.Space) && chargeTime > 0)
@@ -123,6 +139,8 @@ public class GoopMovement : MonoBehaviour
         rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         isJumping = false;
         chargeTime = 0f;
+        
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -130,10 +148,14 @@ public class GoopMovement : MonoBehaviour
         if (collision.collider.CompareTag("Ground"))
         {
             isGrounded = true;
+
+            OnLanding();
         }
         else if (collision.collider.CompareTag("Wall"))
         {
             isClimbing = true;
+            OnLanding();
+
         }
     }
 
@@ -142,11 +164,19 @@ public class GoopMovement : MonoBehaviour
         if (collision.collider.CompareTag("Ground"))
         {
             isGrounded = false;
+            
+
         }
         else if (collision.collider.CompareTag("Wall"))
         {
             isClimbing = false;
         }
+    }
+
+    public void OnLanding ()
+    {
+        animator.SetBool("IsJumping", false);
+        animator.SetBool("ChargeJumping", false);
     }
 
     public float GetChargeTime() => chargeTime;
