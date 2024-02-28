@@ -10283,16 +10283,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 105, y: -2, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 106, y: -2, z: 0}
     second:
       serializedVersion: 2
@@ -26795,7 +26785,7 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 1175
+  - m_RefCount: 1174
     m_Data: {fileID: 11400000, guid: fca6b63698da6f345982a9ec4950fb09, type: 2}
   - m_RefCount: 23
     m_Data: {fileID: 11400000, guid: ddd548d6015ca434e94ae5f47db1a3be, type: 2}
@@ -26846,7 +26836,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 1175
+  - m_RefCount: 1174
     m_Data: {fileID: 1070643829, guid: 0187b23f41345c5428cac853ebceb8e7, type: 3}
   - m_RefCount: 23
     m_Data: {fileID: -2011339723, guid: 0187b23f41345c5428cac853ebceb8e7, type: 3}
@@ -26897,7 +26887,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 1639
+  - m_RefCount: 1638
     m_Data:
       e00: 1
       e01: 0
@@ -27132,7 +27122,7 @@ Tilemap:
       e32: 1.25e-43
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1862
+  - m_RefCount: 1861
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -38457,7 +38447,7 @@ Transform:
   m_GameObject: {fileID: 1083191768}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.01, y: -3.413, z: 0}
+  m_LocalPosition: {x: -2.01, y: -3.432, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -175597,7 +175587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followSpeed: 2
   player: {fileID: 1083191770}
-  offset: {x: 0, y: 2.5}
+  offset: {x: 0.5, y: 2}
 --- !u!114 &2064509759
 MonoBehaviour:
   m_ObjectHideFlags: 0

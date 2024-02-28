@@ -31,10 +31,6 @@ public class JumpManager : MonoBehaviour
                 jumpBar.fillAmount = 0f;
             }
         }
-        /*else
-        {
-            Debug.LogWarning("GoopMovement component is not initialized.");
-        }*/
     }
 
     void ChargeTimeBar()

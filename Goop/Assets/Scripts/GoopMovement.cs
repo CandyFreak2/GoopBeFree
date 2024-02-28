@@ -10,11 +10,11 @@ public class GoopMovement : MonoBehaviour
     private static bool isClimbing = false;
 
     private static float chargeTime = 0.0f;
-    private static float maxChargeTime = 5.0f;
+    private static float maxChargeTime = 2.5f;
     private static float timeSinceLastCharge = 0.0f;
 
     private float minJumpForce = 2.5f;
-    private float maxJumpForce = 15.0f;
+    private float maxJumpForce = 7f;
     [SerializeField] public float playerSpeed = 4f;
     private float fallMultiplier = 2.5f;
     private float lowJumpMultiplier = 2.0f;
