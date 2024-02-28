@@ -6,6 +6,7 @@ using UnityEngine.Rendering.Universal;
 public class LightController : MonoBehaviour
 {
     private Light2D lightObject;
+
     void Start()
     {
         lightObject = GetComponent<Light2D>();
