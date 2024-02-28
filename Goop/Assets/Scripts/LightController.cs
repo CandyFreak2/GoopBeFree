@@ -5,14 +5,13 @@ using UnityEngine.Rendering.Universal;
 
 public class LightController : MonoBehaviour
 {
-    private Light2D _light;
+    private Light2D lightObject;
     void Start()
     {
-        _light = GetComponent<Light2D>();
-        _light.enabled = false;
+        lightObject = GetComponent<Light2D>();
+        lightObject.enabled = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -22,7 +21,7 @@ public class LightController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            _light.enabled = true;
+            lightObject.enabled = true;
 
         }
 
@@ -32,7 +31,7 @@ public class LightController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            _light.enabled = false;
+            lightObject.enabled = false;
 
         }
 
