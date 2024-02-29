@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    private static bool isGamePaused = false;
+    private bool isGamePaused = false;
     public GameObject pausePanel;
 
     private void Awake()
@@ -43,5 +41,10 @@ public class PauseMenu : MonoBehaviour
         pausePanel.SetActive(true);
         Time.timeScale = 0.0f;
         isGamePaused = true;
+    }
+
+    public bool GetIsGamePaused()
+    {
+        return isGamePaused;
     }
 }

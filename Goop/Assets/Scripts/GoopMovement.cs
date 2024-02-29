@@ -31,6 +31,7 @@ public class GoopMovement : MonoBehaviour
     private void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        pauseMenu = FindObjectOfType<PauseMenu>();
     }
 
     private void Start()
@@ -40,7 +41,7 @@ public class GoopMovement : MonoBehaviour
     }
     private void Update()
     {
-        if (!isGoopDead)
+        if (!pauseMenu.GetIsGamePaused() && !isGoopDead)
         {
             HandleInput();
 
@@ -53,7 +54,7 @@ public class GoopMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!isGoopDead && !isClimbing)
+        if (!pauseMenu.GetIsGamePaused() && !isGoopDead && !isClimbing)
         {
             ApplyPhysics();
         }
