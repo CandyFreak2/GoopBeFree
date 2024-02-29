@@ -6,6 +6,9 @@ using UnityEngine.Rendering.Universal;
 public class LightController : MonoBehaviour
 {
     private Light2D lightObject;
+    private float targetOpacity = 0f;
+    private float transitionDuration = 3f;
+    private Coroutine opacityCoroutine;
 
     void Start()
     {
@@ -15,7 +18,7 @@ public class LightController : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -23,18 +26,42 @@ public class LightController : MonoBehaviour
         if (other.tag == "Player")
         {
             lightObject.enabled = true;
-
+            if (opacityCoroutine != null)
+            {
+                StopCoroutine(opacityCoroutine);
+            }
+            targetOpacity = 1f;
+            opacityCoroutine = StartCoroutine(ChangeOpacityOverTime());
         }
-
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
-            lightObject.enabled = false;
+            if (opacityCoroutine != null)
+            {
+                StopCoroutine(opacityCoroutine);
+            }
+            targetOpacity = 0f;
+            opacityCoroutine = StartCoroutine(ChangeOpacityOverTime());
+        }
+    }
 
+    IEnumerator ChangeOpacityOverTime()
+    {
+        float startOpacity = lightObject.color.a;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < transitionDuration)
+        {
+            float newOpacity = Mathf.Lerp(startOpacity, targetOpacity, elapsedTime / transitionDuration);
+            lightObject.color = new Color(lightObject.color.r, lightObject.color.g, lightObject.color.b, newOpacity);
+            elapsedTime += Time.deltaTime;
+            yield return null;
         }
 
+        lightObject.color = new Color(lightObject.color.r, lightObject.color.g, lightObject.color.b, targetOpacity);
     }
 }
+
