@@ -38698,6 +38698,7 @@ MonoBehaviour:
   playerSpeed: 3.5
   healthSystem: {fileID: 877141255}
   animator: {fileID: 1083191775}
+  pauseMenu: {fileID: 259804803}
 --- !u!114 &1083191774
 MonoBehaviour:
   m_ObjectHideFlags: 0
