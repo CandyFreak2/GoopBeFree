@@ -10,7 +10,6 @@ public class TimerScript : MonoBehaviour
 
     [Header("Timer Settings")]
     public float currentTime;
-   
 
     private void Update()
     {

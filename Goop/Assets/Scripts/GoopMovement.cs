@@ -24,8 +24,9 @@ public class GoopMovement : MonoBehaviour
     [SerializeField] private HealthSystem healthSystem;
 
     public Animator animator;
-
     AudioSource audioData;
+
+    [SerializeField] private PauseMenu pauseMenu;
 
     private void Awake()
     {
