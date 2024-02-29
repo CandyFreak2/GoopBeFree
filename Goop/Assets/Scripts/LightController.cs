@@ -44,7 +44,10 @@ public class LightController : MonoBehaviour
                 StopCoroutine(opacityCoroutine);
             }
             targetOpacity = 0f;
-            opacityCoroutine = StartCoroutine(ChangeOpacityOverTime());
+            if (gameObject.activeInHierarchy)
+            {
+                opacityCoroutine = StartCoroutine(ChangeOpacityOverTime());
+            }
         }
     }
 
