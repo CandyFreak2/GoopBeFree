@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class PlayerPos : MonoBehaviour
 {
     private GameMaster gameMaster;
-    private HealthSystem healthSystem;
 
     void Start()
     {
@@ -15,9 +14,6 @@ public class PlayerPos : MonoBehaviour
         {
             // Move the player to the last checkpoint position
             transform.position = gameMaster.lastCheckPoint;
-
-            // Assign the HealthSystem component
-            healthSystem = GetComponent<HealthSystem>();
         }
     }
 

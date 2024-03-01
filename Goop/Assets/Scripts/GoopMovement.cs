@@ -21,8 +21,6 @@ public class GoopMovement : MonoBehaviour
     private float climbSpeed = 3.5f;
     private const float chargeTimeDecayDelay = 3.0f;
 
-    [SerializeField] private HealthSystem healthSystem;
-
     public Animator animator;
     AudioSource audioData;
 
