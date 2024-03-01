@@ -9,4 +9,14 @@ public class MenuScreen : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1);
     }
+    public void LevelSelectButton()
+    {
+        Time.timeScale = 0f;
+        SceneManager.LoadScene("LevelSelect");
+
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -46,5 +47,19 @@ public class PauseMenu : MonoBehaviour
     public bool GetIsGamePaused()
     {
         return isGamePaused;
+    }
+    public void RestartButton()
+    {
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1.0f;
+    }
+    public void BackToMainScreen()
+    {
+        SceneManager.LoadScene("MainScreen");
+    }
+    public void QuitGame()
+    {
+        Debug.Log("quit");
+        Application.Quit();
     }
 }

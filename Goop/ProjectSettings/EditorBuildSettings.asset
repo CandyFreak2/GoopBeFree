@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/WinGameScene.unity
     guid: 2771cda4f70f68640be7e5a4b543b475
+  - enabled: 1
+    path: Assets/Levels/LevelSelect.unity
+    guid: d7ac0ad64b0d2ff49b799a05702ebe5a
   m_configObjects: {}
