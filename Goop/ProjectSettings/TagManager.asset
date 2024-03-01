@@ -17,7 +17,7 @@ TagManager:
   - UI
   - Wall
   - background
-  - 
+  - Instructions
   - 
   - 
   - 
@@ -56,4 +56,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 580032853
+    locked: 0
+  - name: Instructions
+    uniqueID: 1166043179
     locked: 0
