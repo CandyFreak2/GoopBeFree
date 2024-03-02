@@ -16,14 +16,9 @@ public class LightController : MonoBehaviour
         lightObject.enabled = false;
     }
 
-    void Update()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             lightObject.enabled = true;
             if (opacityCoroutine != null)
@@ -37,7 +32,7 @@ public class LightController : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             if (opacityCoroutine != null)
             {

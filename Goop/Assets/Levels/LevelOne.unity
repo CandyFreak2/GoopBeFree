@@ -7693,7 +7693,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 877141258}
-  hasWonLevel: 0
 --- !u!212 &380233215
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29927,7 +29926,6 @@ GameObject:
   - component: {fileID: 539251391}
   - component: {fileID: 539251390}
   - component: {fileID: 539251389}
-  - component: {fileID: 539251392}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -29985,21 +29983,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &539251392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 539251388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8033dc2cf3092bd45bcac8ea56193ceb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pausePanel: {fileID: 1453550409}
-  timer: {fileID: 0}
-  goop: {fileID: 0}
 --- !u!1 &553377239
 GameObject:
   m_ObjectHideFlags: 0
@@ -35733,8 +35716,8 @@ GameObject:
   - component: {fileID: 877141253}
   - component: {fileID: 877141254}
   - component: {fileID: 877141256}
-  - component: {fileID: 877141257}
   - component: {fileID: 877141258}
+  - component: {fileID: 877141259}
   m_Layer: 0
   m_Name: PlayerManager
   m_TagString: GM
@@ -35785,20 +35768,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1083191770}
   lastCheckPoint: {x: 0, y: 0}
---- !u!114 &877141257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877141251}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a0305cfb3b2b8f4d9684d849e69ac03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverUI: {fileID: 0}
-  goop: {fileID: 1083191768}
 --- !u!114 &877141258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35813,6 +35782,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 615938469}
   currentTime: 0
+--- !u!114 &877141259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877141251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8033dc2cf3092bd45bcac8ea56193ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pausePanel: {fileID: 1453550409}
+  timer: {fileID: 877141258}
+  goop: {fileID: 1083191773}
 --- !u!1 &885014876
 GameObject:
   m_ObjectHideFlags: 0
@@ -38890,7 +38874,7 @@ Transform:
   m_GameObject: {fileID: 1083191768}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.61, y: -3.34, z: 0}
+  m_LocalPosition: {x: -3.95, y: -3.43, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40484,7 +40468,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 539251392}
+      - m_Target: {fileID: 877141259}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -43161,7 +43145,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 539251392}
+      - m_Target: {fileID: 877141259}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -165033,7 +165017,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 539251392}
+      - m_Target: {fileID: 877141259}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: BackToMainScreen
         m_Mode: 1
@@ -165249,7 +165233,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 539251392}
+      - m_Target: {fileID: 877141259}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: RestartButton
         m_Mode: 1

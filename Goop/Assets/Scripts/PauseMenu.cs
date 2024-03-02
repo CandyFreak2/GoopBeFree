@@ -34,9 +34,12 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
-        pausePanel.SetActive(false);
-        Time.timeScale = 1.0f;
-        isGamePaused = false;
+        if (pausePanel != null)
+        {
+            pausePanel.SetActive(false);
+            Time.timeScale = 1.0f;
+            isGamePaused = false;
+        }
     }
 
     public void Pause()
@@ -57,11 +60,11 @@ public class PauseMenu : MonoBehaviour
         {
             timer.ResetTimer();
         }
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
         if (goop != null)
         {
             goop.ResetFlip();
         }
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1.0f;
     }
 
@@ -71,11 +74,11 @@ public class PauseMenu : MonoBehaviour
         {
             timer.ResetTimer();
         }
-        SceneManager.LoadScene("MainScreen");
         if (goop != null)
         {
             goop.ResetFlip();
         }
+        SceneManager.LoadScene("MainScreen");
     }
 
     public void QuitGame()
