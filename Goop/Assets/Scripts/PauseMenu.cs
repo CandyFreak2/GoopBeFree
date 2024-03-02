@@ -5,6 +5,8 @@ public class PauseMenu : MonoBehaviour
 {
     private bool isGamePaused = false;
     public GameObject pausePanel;
+    public TimerScript timer;
+    public GoopMovement goop;
 
     private void Awake()
     {
@@ -48,18 +50,37 @@ public class PauseMenu : MonoBehaviour
     {
         return isGamePaused;
     }
+
     public void RestartButton()
     {
+        if (timer != null)
+        {
+            timer.ResetTimer();
+        }
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        if (goop != null)
+        {
+            goop.ResetFlip();
+        }
         Time.timeScale = 1.0f;
     }
+
     public void BackToMainScreen()
     {
+        if (timer != null)
+        {
+            timer.ResetTimer();
+        }
         SceneManager.LoadScene("MainScreen");
+        if (goop != null)
+        {
+            goop.ResetFlip();
+        }
     }
+
     public void QuitGame()
     {
-        Debug.Log("quit");
+        Debug.Log("Quit");
         Application.Quit();
     }
 }

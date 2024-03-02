@@ -188,4 +188,11 @@ public class GoopMovement : MonoBehaviour
     public bool IsOnGround() => isGrounded;
 
     public void SetIsGoopDead(bool isDead) => isGoopDead = isDead;
+
+    public void ResetFlip()
+    {
+        isFacingRight = true;
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+    }
+
 }

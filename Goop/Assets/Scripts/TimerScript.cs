@@ -24,8 +24,12 @@ public class TimerScript : MonoBehaviour
 
     private void SetTimerStyle(int min, int sec)
     {
-        timerText.text = string.Format("{0:00}:{1:00}", min, sec);
+        if (timerText != null)
+        {
+            timerText.text = string.Format("{0:00}:{1:00}", min, sec);
+        }
     }
+
 
     public void SetIsTimerRunning(bool shouldContinue)
     {
@@ -36,4 +40,7 @@ public class TimerScript : MonoBehaviour
     {
         StaticData.timeValuesToKeep[levelIndex] = currentTime;
     }
+
+
+    public void ResetTimer() { currentTime = 0; }
 }
