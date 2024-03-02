@@ -35766,8 +35766,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d92d31152b6ead42981b2177e06d114, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1083191770}
-  lastCheckPoint: {x: 0, y: 0}
 --- !u!114 &877141258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38803,7 +38801,6 @@ GameObject:
   - component: {fileID: 1083191771}
   - component: {fileID: 1083191772}
   - component: {fileID: 1083191773}
-  - component: {fileID: 1083191774}
   - component: {fileID: 1083191775}
   - component: {fileID: 1083191776}
   m_Layer: 0
@@ -38959,18 +38956,6 @@ MonoBehaviour:
   playerSpeed: 3.5
   animator: {fileID: 1083191775}
   pauseMenu: {fileID: 259804803}
---- !u!114 &1083191774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083191768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05387fce626be7d488492ce65fbd8247, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1083191775
 Animator:
   serializedVersion: 5

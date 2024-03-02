@@ -6,10 +6,16 @@ using UnityEngine.SceneManagement;
 public class MenuScreen : MonoBehaviour
 {
     [SerializeField] PauseMenu pauseMenu;
+
+    public void PlayCinematic()
+    {
+        SceneManager.LoadScene("Cutscene");
+    }
+
     public void PlayGame()
     {
         pauseMenu.SetIsGamePaused(false);
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("LevelOne");
     }
 
     public void LevelSelectButton()

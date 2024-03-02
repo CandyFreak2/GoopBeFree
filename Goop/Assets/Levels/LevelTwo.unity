@@ -37441,7 +37441,6 @@ GameObject:
   - component: {fileID: 1161905366}
   - component: {fileID: 1161905365}
   - component: {fileID: 1161905364}
-  - component: {fileID: 1161905363}
   - component: {fileID: 1161905362}
   - component: {fileID: 1161905361}
   m_Layer: 0
@@ -37568,18 +37567,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1161905363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1161905360}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05387fce626be7d488492ce65fbd8247, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1161905364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48156,12 +48143,12 @@ SpriteRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1826400432}
-  - {fileID: 2062475793}
   - {fileID: 1405587491}
+  - {fileID: 1161905368}
+  - {fileID: 2018225813}
   - {fileID: 1554892144}
   - {fileID: 982288316}
   - {fileID: 1766479126}
-  - {fileID: 2018225813}
-  - {fileID: 1161905368}
   - {fileID: 2043068114}
+  - {fileID: 2062475793}
+  - {fileID: 1826400432}

@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 public class WinState : MonoBehaviour
@@ -12,17 +11,20 @@ public class WinState : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            if (!collision.TryGetComponent<GoopMovement>(out _))
+            {
+                Debug.LogError("Player Script is Null");
+            }
+
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("LevelOne"))
             {
                 hasWonLevelOne = true;
+                Debug.Log("Completed level 1: " + hasWonLevelOne);
             }
             else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("LevelTwo"))
             {
                 hasWonLevelTwo = true;
-            }
-            if (!collision.TryGetComponent<GoopMovement>(out _))
-            {
-                Debug.LogError("Player Script is Null");
+                Debug.Log("Completed level 2: " + hasWonLevelTwo);
             }
         }
 
@@ -30,16 +32,15 @@ public class WinState : MonoBehaviour
         {
             timer.SetIsTimerRunning(false);
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            timer.SaveTimeForCurrentLevel(currentSceneIndex);
+            Debug.Log("Time " + currentSceneIndex +": " + timer.currentTime);
             SceneManager.LoadScene(currentSceneIndex + 1);
         }
 
         if (hasWonLevelOne && hasWonLevelTwo)
         {
             timer.SetIsTimerRunning(false);
-
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            timer.SaveTimeForCurrentLevel(currentSceneIndex);
-
+            Debug.Log("Has Won Both Levels, Going to WinScene");
             SceneManager.LoadScene("WinGameScene");
         }
     }
