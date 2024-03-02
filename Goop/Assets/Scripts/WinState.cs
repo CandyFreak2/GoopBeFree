@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 public class WinState : MonoBehaviour
@@ -11,11 +12,11 @@ public class WinState : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (!hasWonLevelOne && (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("LevelOne")))
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("LevelOne"))
             {
                 hasWonLevelOne = true;
             }
-            else if (!hasWonLevelTwo && (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("LevelTwo")))
+            else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("LevelTwo"))
             {
                 hasWonLevelTwo = true;
             }
@@ -32,13 +33,14 @@ public class WinState : MonoBehaviour
             SceneManager.LoadScene(currentSceneIndex + 1);
         }
 
-        if (hasWonLevelOne && hasWonLevelTwo && timer != null)
+        if (hasWonLevelOne && hasWonLevelTwo)
         {
-            timer.SetIsTimerRunning(true);
+            timer.SetIsTimerRunning(false);
 
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             timer.SaveTimeForCurrentLevel(currentSceneIndex);
-            SceneManager.LoadScene("WinGameScene");
+
+            SceneManager.LoadSceneAsync("WinGameScene");
         }
     }
 }

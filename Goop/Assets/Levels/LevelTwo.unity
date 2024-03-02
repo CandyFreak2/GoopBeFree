@@ -133,9 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2430162}
   - component: {fileID: 2430166}
-  - component: {fileID: 2430165}
   - component: {fileID: 2430164}
   - component: {fileID: 2430163}
+  - component: {fileID: 2430167}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -243,18 +243,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &2430165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2430161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2430166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +266,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -306,6 +294,18 @@ MonoBehaviour:
   - {x: 3.183649, y: -2.6567597, z: 0}
   - {x: 2.5395823, y: 1.1653138, z: 0}
   - {x: -3.7824543, y: 3.1175869, z: 0}
+--- !u!114 &2430167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2430161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &35433641
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,9 +401,9 @@ GameObject:
   m_Component:
   - component: {fileID: 46992936}
   - component: {fileID: 46992940}
-  - component: {fileID: 46992939}
   - component: {fileID: 46992938}
   - component: {fileID: 46992937}
+  - component: {fileID: 46992941}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -506,18 +506,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &46992939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46992935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &46992940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,7 +529,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -569,6 +557,18 @@ MonoBehaviour:
   - {x: 0.29954845, y: -4.998297, z: 0}
   - {x: 4.2671204, y: 0.7895166, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &46992941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46992935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &54290360
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,9 +829,9 @@ GameObject:
   m_Component:
   - component: {fileID: 72542808}
   - component: {fileID: 72542812}
-  - component: {fileID: 72542811}
   - component: {fileID: 72542810}
   - component: {fileID: 72542809}
+  - component: {fileID: 72542813}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -932,18 +932,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &72542811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 72542807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &72542812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,7 +955,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -995,6 +983,18 @@ MonoBehaviour:
   - {x: 8.4195, y: -2.9525201, z: 0}
   - {x: 8.75154, y: 0.6586838, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &72542813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72542807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &74387861
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,9 +1005,9 @@ GameObject:
   m_Component:
   - component: {fileID: 74387862}
   - component: {fileID: 74387866}
-  - component: {fileID: 74387865}
   - component: {fileID: 74387864}
   - component: {fileID: 74387863}
+  - component: {fileID: 74387867}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -1112,18 +1112,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &74387865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74387861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &74387866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1147,7 +1135,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -1175,6 +1163,18 @@ MonoBehaviour:
   - {x: 8.050725, y: -3.0029895, z: 0}
   - {x: 5.12758, y: 2.3745747, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &74387867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74387861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &74808647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,9 +1295,9 @@ GameObject:
   m_Component:
   - component: {fileID: 78138323}
   - component: {fileID: 78138327}
-  - component: {fileID: 78138326}
   - component: {fileID: 78138325}
   - component: {fileID: 78138324}
+  - component: {fileID: 78138328}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -1402,18 +1402,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &78138326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78138322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &78138327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1437,7 +1425,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -1465,6 +1453,18 @@ MonoBehaviour:
   - {x: 3.0206983, y: -2.5879488, z: 0}
   - {x: 4.5848756, y: 0.7971302, z: 0}
   - {x: -3.995369, y: 0.4723114, z: 0}
+--- !u!114 &78138328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78138322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &92093823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,9 +1692,9 @@ GameObject:
   m_Component:
   - component: {fileID: 102273324}
   - component: {fileID: 102273328}
-  - component: {fileID: 102273327}
   - component: {fileID: 102273326}
   - component: {fileID: 102273325}
+  - component: {fileID: 102273329}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -1799,18 +1799,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &102273327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102273323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &102273328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1834,7 +1822,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -1862,6 +1850,18 @@ MonoBehaviour:
   - {x: 0.50344145, y: -2.5221295, z: 0}
   - {x: 3.2927504, y: -0.07423637, z: 0}
   - {x: -1.5583373, y: 4.4644322, z: 0}
+--- !u!114 &102273329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102273323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &113417248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2042,9 +2042,9 @@ GameObject:
   m_Component:
   - component: {fileID: 120823932}
   - component: {fileID: 120823936}
-  - component: {fileID: 120823935}
   - component: {fileID: 120823934}
   - component: {fileID: 120823933}
+  - component: {fileID: 120823937}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -2153,18 +2153,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &120823935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120823931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &120823936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2188,7 +2176,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -2216,6 +2204,18 @@ MonoBehaviour:
   - {x: 3.2069926, y: -4.7873774, z: 0}
   - {x: 3.350378, y: -0.8732409, z: 0}
   - {x: -2.4488745, y: 4.429716, z: 0}
+--- !u!114 &120823937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120823931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &140772698
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,9 +2311,9 @@ GameObject:
   m_Component:
   - component: {fileID: 160115755}
   - component: {fileID: 160115759}
-  - component: {fileID: 160115758}
   - component: {fileID: 160115757}
   - component: {fileID: 160115756}
+  - component: {fileID: 160115760}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -2416,18 +2416,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &160115758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 160115754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &160115759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2451,7 +2439,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -2479,6 +2467,18 @@ MonoBehaviour:
   - {x: -0.01707561, y: -3.417574, z: 0}
   - {x: 0.56718206, y: 0.5704865, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &160115760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160115754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &161477920
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,9 +2489,9 @@ GameObject:
   m_Component:
   - component: {fileID: 161477921}
   - component: {fileID: 161477925}
-  - component: {fileID: 161477924}
   - component: {fileID: 161477923}
   - component: {fileID: 161477922}
+  - component: {fileID: 161477926}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -2591,18 +2591,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &161477924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 161477920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &161477925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2626,7 +2614,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -2654,6 +2642,18 @@ MonoBehaviour:
   - {x: 4.8812714, y: -5.4287167, z: 0}
   - {x: 4.400275, y: 0.25830984, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &161477926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161477920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &193416047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2664,9 +2664,9 @@ GameObject:
   m_Component:
   - component: {fileID: 193416048}
   - component: {fileID: 193416052}
-  - component: {fileID: 193416051}
   - component: {fileID: 193416050}
   - component: {fileID: 193416049}
+  - component: {fileID: 193416053}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -2768,18 +2768,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &193416051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193416047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &193416052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2803,7 +2791,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -2831,6 +2819,18 @@ MonoBehaviour:
   - {x: 5.0591564, y: -3.107416, z: 0}
   - {x: 6.6108313, y: 3.5241807, z: 0}
   - {x: -4.424633, y: 1.963235, z: 0}
+--- !u!114 &193416053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193416047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &193700677
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,9 +3010,9 @@ GameObject:
   m_Component:
   - component: {fileID: 210257685}
   - component: {fileID: 210257689}
-  - component: {fileID: 210257688}
   - component: {fileID: 210257687}
   - component: {fileID: 210257686}
+  - component: {fileID: 210257690}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -3118,18 +3118,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &210257688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210257684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &210257689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3153,7 +3141,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -3181,6 +3169,18 @@ MonoBehaviour:
   - {x: -0.99307853, y: -8.039497, z: 0}
   - {x: 2.4501135, y: 0.61186695, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &210257690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210257684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &214400951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,9 +3253,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -801360981
+  m_SortingLayer: 1
+  m_SortingOrder: 3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -28935,9 +28935,9 @@ GameObject:
   m_Component:
   - component: {fileID: 274233594}
   - component: {fileID: 274233598}
-  - component: {fileID: 274233597}
   - component: {fileID: 274233596}
   - component: {fileID: 274233595}
+  - component: {fileID: 274233599}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -29042,18 +29042,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &274233597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274233593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &274233598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29077,7 +29065,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -29105,6 +29093,18 @@ MonoBehaviour:
   - {x: 6.2897086, y: -5.5939674, z: 0}
   - {x: 3.346505, y: 1.9614041, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &274233599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274233593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &274941964
 GameObject:
   m_ObjectHideFlags: 0
@@ -29200,9 +29200,9 @@ GameObject:
   m_Component:
   - component: {fileID: 279857867}
   - component: {fileID: 279857871}
-  - component: {fileID: 279857870}
   - component: {fileID: 279857869}
   - component: {fileID: 279857868}
+  - component: {fileID: 279857872}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -29301,18 +29301,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &279857870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279857866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &279857871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29336,7 +29324,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -29364,6 +29352,18 @@ MonoBehaviour:
   - {x: 4.992108, y: -1.8912119, z: 0}
   - {x: 8.75154, y: 0.6586838, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &279857872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279857866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &290947411
 GameObject:
   m_ObjectHideFlags: 0
@@ -29544,9 +29544,9 @@ GameObject:
   m_Component:
   - component: {fileID: 351964185}
   - component: {fileID: 351964189}
-  - component: {fileID: 351964188}
   - component: {fileID: 351964187}
   - component: {fileID: 351964186}
+  - component: {fileID: 351964190}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -29650,18 +29650,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &351964188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 351964184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &351964189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29685,7 +29673,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -29713,6 +29701,18 @@ MonoBehaviour:
   - {x: -0.11011659, y: -2.8528194, z: 0}
   - {x: 1.1765256, y: 1.1043074, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &351964190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351964184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &361947397
 GameObject:
   m_ObjectHideFlags: 0
@@ -30062,9 +30062,9 @@ GameObject:
   m_Component:
   - component: {fileID: 424829171}
   - component: {fileID: 424829175}
-  - component: {fileID: 424829174}
   - component: {fileID: 424829173}
   - component: {fileID: 424829172}
+  - component: {fileID: 424829176}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -30164,18 +30164,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &424829174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424829170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &424829175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30199,7 +30187,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -30227,6 +30215,18 @@ MonoBehaviour:
   - {x: 6.9714336, y: -3.7811391, z: 0}
   - {x: 4.1310916, y: -0.7567304, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &424829176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424829170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &431141350
 GameObject:
   m_ObjectHideFlags: 0
@@ -30492,9 +30492,9 @@ GameObject:
   m_Component:
   - component: {fileID: 480932905}
   - component: {fileID: 480932909}
-  - component: {fileID: 480932908}
   - component: {fileID: 480932907}
   - component: {fileID: 480932906}
+  - component: {fileID: 480932910}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -30597,18 +30597,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &480932908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 480932904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &480932909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30632,7 +30620,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -30660,6 +30648,18 @@ MonoBehaviour:
   - {x: 3.5954595, y: -2.3710186, z: 0}
   - {x: 4.714053, y: 1.2424724, z: 0}
   - {x: -2.230351, y: 1.5083632, z: 0}
+--- !u!114 &480932910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480932904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &482345560
 GameObject:
   m_ObjectHideFlags: 0
@@ -30755,9 +30755,9 @@ GameObject:
   m_Component:
   - component: {fileID: 504818099}
   - component: {fileID: 504818103}
-  - component: {fileID: 504818102}
   - component: {fileID: 504818101}
   - component: {fileID: 504818100}
+  - component: {fileID: 504818104}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -30857,18 +30857,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &504818102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504818098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &504818103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30892,7 +30880,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -30920,6 +30908,18 @@ MonoBehaviour:
   - {x: -1.6178161, y: -2.6806397, z: 0}
   - {x: -0.983592, y: 1.0244921, z: 0}
   - {x: -6.3614655, y: 0.86580825, z: 0}
+--- !u!114 &504818104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504818098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &506992210
 GameObject:
   m_ObjectHideFlags: 0
@@ -30930,9 +30930,9 @@ GameObject:
   m_Component:
   - component: {fileID: 506992211}
   - component: {fileID: 506992215}
-  - component: {fileID: 506992214}
   - component: {fileID: 506992213}
   - component: {fileID: 506992212}
+  - component: {fileID: 506992216}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -31034,18 +31034,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &506992214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 506992210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &506992215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31069,7 +31057,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -31097,6 +31085,18 @@ MonoBehaviour:
   - {x: 5.264308, y: -4.0152955, z: 0}
   - {x: 4.1942515, y: 0.116937995, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &506992216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506992210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &520376636
 GameObject:
   m_ObjectHideFlags: 0
@@ -31107,9 +31107,9 @@ GameObject:
   m_Component:
   - component: {fileID: 520376637}
   - component: {fileID: 520376641}
-  - component: {fileID: 520376640}
   - component: {fileID: 520376639}
   - component: {fileID: 520376638}
+  - component: {fileID: 520376642}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -31209,18 +31209,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &520376640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520376636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &520376641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31244,7 +31232,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -31272,6 +31260,18 @@ MonoBehaviour:
   - {x: 7.196823, y: -2.1635232, z: 0}
   - {x: 4.5255203, y: -0.015322446, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &520376642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520376636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &547747646
 GameObject:
   m_ObjectHideFlags: 0
@@ -31282,9 +31282,9 @@ GameObject:
   m_Component:
   - component: {fileID: 547747647}
   - component: {fileID: 547747651}
-  - component: {fileID: 547747650}
   - component: {fileID: 547747649}
   - component: {fileID: 547747648}
+  - component: {fileID: 547747652}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -31385,18 +31385,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &547747650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547747646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &547747651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31420,7 +31408,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -31448,6 +31436,18 @@ MonoBehaviour:
   - {x: 2.7391126, y: -2.3058014, z: 0}
   - {x: 2.994482, y: 3.3812253, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &547747652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547747646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &570382661
 GameObject:
   m_ObjectHideFlags: 0
@@ -31458,9 +31458,9 @@ GameObject:
   m_Component:
   - component: {fileID: 570382662}
   - component: {fileID: 570382666}
-  - component: {fileID: 570382665}
   - component: {fileID: 570382664}
   - component: {fileID: 570382663}
+  - component: {fileID: 570382667}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -31564,18 +31564,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &570382665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 570382661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &570382666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31599,7 +31587,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -31627,6 +31615,18 @@ MonoBehaviour:
   - {x: 1.2682515, y: -3.252669, z: 0}
   - {x: 1.0451313, y: 0.6586839, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &570382667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570382661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &616693883
 GameObject:
   m_ObjectHideFlags: 0
@@ -31807,9 +31807,9 @@ GameObject:
   m_Component:
   - component: {fileID: 639180927}
   - component: {fileID: 639180931}
-  - component: {fileID: 639180930}
   - component: {fileID: 639180929}
   - component: {fileID: 639180928}
+  - component: {fileID: 639180932}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -31919,18 +31919,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &639180930
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 639180926}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &639180931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31954,7 +31942,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -31982,6 +31970,18 @@ MonoBehaviour:
   - {x: 3.1949077, y: -4.436244, z: 0}
   - {x: 0.3989417, y: 0.9981882, z: 0}
   - {x: -6.095426, y: 0.9365054, z: 0}
+--- !u!114 &639180932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639180926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &645815610
 GameObject:
   m_ObjectHideFlags: 0
@@ -32077,9 +32077,9 @@ GameObject:
   m_Component:
   - component: {fileID: 651048510}
   - component: {fileID: 651048514}
-  - component: {fileID: 651048513}
   - component: {fileID: 651048512}
   - component: {fileID: 651048511}
+  - component: {fileID: 651048515}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -32182,18 +32182,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &651048513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651048509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &651048514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32217,7 +32205,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -32245,6 +32233,18 @@ MonoBehaviour:
   - {x: 5.573008, y: -4.1189876, z: 0}
   - {x: 1.8987733, y: 3.7045968, z: 0}
   - {x: -1.0991483, y: 0.8583436, z: 0}
+--- !u!114 &651048515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651048509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &668556612
 GameObject:
   m_ObjectHideFlags: 0
@@ -32255,9 +32255,9 @@ GameObject:
   m_Component:
   - component: {fileID: 668556613}
   - component: {fileID: 668556617}
-  - component: {fileID: 668556616}
   - component: {fileID: 668556615}
   - component: {fileID: 668556614}
+  - component: {fileID: 668556618}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -32358,18 +32358,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &668556616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668556612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &668556617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32393,7 +32381,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -32421,6 +32409,18 @@ MonoBehaviour:
   - {x: 4.507593, y: -2.2924397, z: 0}
   - {x: 8.75154, y: 0.6586838, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &668556618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668556612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &687057154
 GameObject:
   m_ObjectHideFlags: 0
@@ -32431,9 +32431,9 @@ GameObject:
   m_Component:
   - component: {fileID: 687057155}
   - component: {fileID: 687057159}
-  - component: {fileID: 687057158}
   - component: {fileID: 687057157}
   - component: {fileID: 687057156}
+  - component: {fileID: 687057160}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -32536,18 +32536,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &687057158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 687057154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &687057159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32571,7 +32559,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -32599,6 +32587,18 @@ MonoBehaviour:
   - {x: 0.90516204, y: -5.7759643, z: 0}
   - {x: 0.93904376, y: 0.3200948, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &687057160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 687057154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &693810787
 GameObject:
   m_ObjectHideFlags: 0
@@ -32609,9 +32609,9 @@ GameObject:
   m_Component:
   - component: {fileID: 693810788}
   - component: {fileID: 693810792}
-  - component: {fileID: 693810791}
   - component: {fileID: 693810790}
   - component: {fileID: 693810789}
+  - component: {fileID: 693810793}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -32711,18 +32711,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &693810791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 693810787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &693810792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32746,7 +32734,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -32774,6 +32762,18 @@ MonoBehaviour:
   - {x: 3.7984438, y: -4.309568, z: 0}
   - {x: 3.9151702, y: 0.50232744, z: 0}
   - {x: 0.31695575, y: 1.1645083, z: 0}
+--- !u!114 &693810793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693810787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &725807236
 GameObject:
   m_ObjectHideFlags: 0
@@ -32869,9 +32869,9 @@ GameObject:
   m_Component:
   - component: {fileID: 729623227}
   - component: {fileID: 729623231}
-  - component: {fileID: 729623230}
   - component: {fileID: 729623229}
   - component: {fileID: 729623228}
+  - component: {fileID: 729623232}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -32976,18 +32976,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &729623230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729623226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &729623231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33011,7 +32999,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -33040,6 +33028,18 @@ MonoBehaviour:
   - {x: 3.5283298, y: -5.609744, z: 0}
   - {x: 3.9354677, y: -2.5999806, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &729623232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729623226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &738877622
 GameObject:
   m_ObjectHideFlags: 0
@@ -33135,9 +33135,9 @@ GameObject:
   m_Component:
   - component: {fileID: 760353537}
   - component: {fileID: 760353541}
-  - component: {fileID: 760353540}
   - component: {fileID: 760353539}
   - component: {fileID: 760353538}
+  - component: {fileID: 760353542}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -33237,18 +33237,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &760353540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760353536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &760353541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33272,7 +33260,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -33300,6 +33288,18 @@ MonoBehaviour:
   - {x: 5.459286, y: -5.4299827, z: 0}
   - {x: 6.8194995, y: 0.703998, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &760353542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760353536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &809704437
 GameObject:
   m_ObjectHideFlags: 0
@@ -33310,9 +33310,9 @@ GameObject:
   m_Component:
   - component: {fileID: 809704438}
   - component: {fileID: 809704442}
-  - component: {fileID: 809704441}
   - component: {fileID: 809704440}
   - component: {fileID: 809704439}
+  - component: {fileID: 809704443}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -33419,18 +33419,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &809704441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809704437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &809704442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33454,7 +33442,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -33482,6 +33470,18 @@ MonoBehaviour:
   - {x: 2.1282034, y: -3.0421407, z: 0}
   - {x: 3.2440948, y: 2.7051237, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &809704443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809704437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &870042803
 GameObject:
   m_ObjectHideFlags: 0
@@ -33747,9 +33747,9 @@ GameObject:
   m_Component:
   - component: {fileID: 900243464}
   - component: {fileID: 900243468}
-  - component: {fileID: 900243467}
   - component: {fileID: 900243466}
   - component: {fileID: 900243465}
+  - component: {fileID: 900243469}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -33850,18 +33850,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &900243467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900243463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &900243468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33885,7 +33873,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -33913,6 +33901,18 @@ MonoBehaviour:
   - {x: 4.987034, y: -2.428637, z: 0}
   - {x: -0.005749759, y: 0.7786292, z: 0}
   - {x: -5.313168, y: 1.6594731, z: 0}
+--- !u!114 &900243469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900243463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &902148662
 GameObject:
   m_ObjectHideFlags: 0
@@ -34771,7 +34771,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 982288316}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lanterns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34878,9 +34878,9 @@ GameObject:
   m_Component:
   - component: {fileID: 983087083}
   - component: {fileID: 983087087}
-  - component: {fileID: 983087086}
   - component: {fileID: 983087085}
   - component: {fileID: 983087084}
+  - component: {fileID: 983087088}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -34982,18 +34982,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &983087086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983087082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &983087087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35017,7 +35005,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -35045,6 +35033,18 @@ MonoBehaviour:
   - {x: 8.830882, y: -4.387745, z: 0}
   - {x: 8.75154, y: 0.6586838, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &983087088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983087082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1019701578
 GameObject:
   m_ObjectHideFlags: 0
@@ -35385,9 +35385,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1027559126}
   - component: {fileID: 1027559130}
-  - component: {fileID: 1027559129}
   - component: {fileID: 1027559128}
   - component: {fileID: 1027559127}
+  - component: {fileID: 1027559131}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -35487,18 +35487,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1027559129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1027559125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1027559130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35522,7 +35510,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -35550,6 +35538,18 @@ MonoBehaviour:
   - {x: 4.0634456, y: -3.7476475, z: 0}
   - {x: 7.7299466, y: 1.7061127, z: 0}
   - {x: 0.57023567, y: 1.6056187, z: 0}
+--- !u!114 &1027559131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027559125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1030248652
 GameObject:
   m_ObjectHideFlags: 0
@@ -35560,9 +35560,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1030248653}
   - component: {fileID: 1030248657}
-  - component: {fileID: 1030248656}
   - component: {fileID: 1030248655}
   - component: {fileID: 1030248654}
+  - component: {fileID: 1030248658}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -35666,18 +35666,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1030248656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1030248652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1030248657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35701,7 +35689,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -35729,6 +35717,18 @@ MonoBehaviour:
   - {x: -1.9803549, y: -4.589809, z: 0}
   - {x: 0.5868061, y: -1.4293119, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1030248658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030248652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1041221343
 GameObject:
   m_ObjectHideFlags: 0
@@ -35824,9 +35824,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1041926500}
   - component: {fileID: 1041926504}
-  - component: {fileID: 1041926503}
   - component: {fileID: 1041926502}
   - component: {fileID: 1041926501}
+  - component: {fileID: 1041926505}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -35927,18 +35927,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1041926503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041926499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1041926504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35962,7 +35950,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -35990,6 +35978,18 @@ MonoBehaviour:
   - {x: 0.8202424, y: -5.6405272, z: 0}
   - {x: 0.7409012, y: 0.52324796, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1041926505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041926499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1056476047
 GameObject:
   m_ObjectHideFlags: 0
@@ -36000,9 +36000,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1056476048}
   - component: {fileID: 1056476052}
-  - component: {fileID: 1056476051}
   - component: {fileID: 1056476050}
   - component: {fileID: 1056476049}
+  - component: {fileID: 1056476053}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -36102,18 +36102,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1056476051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1056476047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1056476052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36137,7 +36125,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -36165,6 +36153,18 @@ MonoBehaviour:
   - {x: 6.997601, y: -2.296825, z: 0}
   - {x: 8.75154, y: 0.6586838, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1056476053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056476047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1062374089
 GameObject:
   m_ObjectHideFlags: 0
@@ -36175,9 +36175,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1062374090}
   - component: {fileID: 1062374094}
-  - component: {fileID: 1062374093}
   - component: {fileID: 1062374092}
   - component: {fileID: 1062374091}
+  - component: {fileID: 1062374095}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -36276,18 +36276,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1062374093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1062374089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1062374094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36311,7 +36299,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -36339,6 +36327,18 @@ MonoBehaviour:
   - {x: 5.96112, y: -2.5599263, z: 0}
   - {x: 8.75154, y: 0.6586838, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1062374095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062374089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1072383219
 GameObject:
   m_ObjectHideFlags: 0
@@ -36434,9 +36434,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1080721815}
   - component: {fileID: 1080721819}
-  - component: {fileID: 1080721818}
   - component: {fileID: 1080721817}
   - component: {fileID: 1080721816}
+  - component: {fileID: 1080721820}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -36538,18 +36538,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1080721818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080721814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1080721819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36573,7 +36561,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -36601,6 +36589,18 @@ MonoBehaviour:
   - {x: 3.275998, y: -4.145243, z: 0}
   - {x: 0.07456664, y: 0.4646803, z: 0}
   - {x: -4.6762996, y: 3.070538, z: 0}
+--- !u!114 &1080721820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080721814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1081507498
 GameObject:
   m_ObjectHideFlags: 0
@@ -36611,9 +36611,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1081507499}
   - component: {fileID: 1081507503}
-  - component: {fileID: 1081507502}
   - component: {fileID: 1081507501}
   - component: {fileID: 1081507500}
+  - component: {fileID: 1081507504}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -36717,18 +36717,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1081507502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1081507498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1081507503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36752,7 +36740,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -36780,6 +36768,18 @@ MonoBehaviour:
   - {x: 1.2905668, y: -6.3080316, z: 0}
   - {x: 5.8327055, y: -1.8435072, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1081507504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081507498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1082560125
 GameObject:
   m_ObjectHideFlags: 0
@@ -36922,9 +36922,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1102352425}
   - component: {fileID: 1102352429}
-  - component: {fileID: 1102352428}
   - component: {fileID: 1102352427}
   - component: {fileID: 1102352426}
+  - component: {fileID: 1102352430}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -37025,18 +37025,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1102352428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102352424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1102352429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37060,7 +37048,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -37088,6 +37076,18 @@ MonoBehaviour:
   - {x: 0.22762586, y: -2.3936465, z: 0}
   - {x: 1.3985835, y: 0.48063868, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1102352430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102352424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1105799279
 GameObject:
   m_ObjectHideFlags: 0
@@ -37575,7 +37575,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161905360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 05387fce626be7d488492ce65fbd8247, type: 3}
   m_Name: 
@@ -37718,7 +37718,7 @@ Transform:
   m_GameObject: {fileID: 1161905360}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.2, y: -3.43, z: 0}
+  m_LocalPosition: {x: -12.76, y: -3.42, z: 0}
   m_LocalScale: {x: 0.85, y: 0.85, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -37736,9 +37736,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1184055988}
   - component: {fileID: 1184055992}
-  - component: {fileID: 1184055991}
   - component: {fileID: 1184055990}
   - component: {fileID: 1184055989}
+  - component: {fileID: 1184055993}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -37839,18 +37839,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1184055991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1184055987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1184055992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37874,7 +37862,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -37902,6 +37890,18 @@ MonoBehaviour:
   - {x: 0.6444443, y: -5.2673, z: 0}
   - {x: 0.76119465, y: 1.5382391, z: 0}
   - {x: -1.8725742, y: 2.2591114, z: 0}
+--- !u!114 &1184055993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184055987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1189398458
 GameObject:
   m_ObjectHideFlags: 0
@@ -37912,9 +37912,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1189398459}
   - component: {fileID: 1189398463}
-  - component: {fileID: 1189398462}
   - component: {fileID: 1189398461}
   - component: {fileID: 1189398460}
+  - component: {fileID: 1189398464}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -38014,18 +38014,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1189398462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189398458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1189398463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38049,7 +38037,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -38077,6 +38065,18 @@ MonoBehaviour:
   - {x: 4.171261, y: -4.070541, z: 0}
   - {x: 3.9403849, y: 0.024277309, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1189398464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189398458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1201679178
 GameObject:
   m_ObjectHideFlags: 0
@@ -38087,9 +38087,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1201679179}
   - component: {fileID: 1201679183}
-  - component: {fileID: 1201679182}
   - component: {fileID: 1201679181}
   - component: {fileID: 1201679180}
+  - component: {fileID: 1201679184}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -38195,18 +38195,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1201679182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201679178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1201679183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38230,7 +38218,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -38258,6 +38246,18 @@ MonoBehaviour:
   - {x: 7.344136, y: -4.276594, z: 0}
   - {x: 4.786882, y: 2.6964402, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1201679184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201679178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1201740541
 GameObject:
   m_ObjectHideFlags: 0
@@ -38268,9 +38268,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1201740542}
   - component: {fileID: 1201740546}
-  - component: {fileID: 1201740545}
   - component: {fileID: 1201740544}
   - component: {fileID: 1201740543}
+  - component: {fileID: 1201740547}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -38373,18 +38373,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1201740545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201740541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1201740546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38408,7 +38396,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -38436,6 +38424,18 @@ MonoBehaviour:
   - {x: 2.6052313, y: -2.225728, z: 0}
   - {x: 5.0697036, y: 1.2992817, z: 0}
   - {x: 0.10248239, y: -0.14059763, z: 0}
+--- !u!114 &1201740547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201740541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1208630645
 GameObject:
   m_ObjectHideFlags: 0
@@ -38665,9 +38665,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1219535758}
   - component: {fileID: 1219535762}
-  - component: {fileID: 1219535761}
   - component: {fileID: 1219535760}
   - component: {fileID: 1219535759}
+  - component: {fileID: 1219535763}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -38771,18 +38771,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1219535761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1219535757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1219535762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38806,7 +38794,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -38834,6 +38822,18 @@ MonoBehaviour:
   - {x: -1.8175957, y: -2.9679704, z: 0}
   - {x: 1.7655983, y: 0.6992491, z: 0}
   - {x: -1.686931, y: 1.3518646, z: 0}
+--- !u!114 &1219535763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219535757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1228220338
 GameObject:
   m_ObjectHideFlags: 0
@@ -38951,11 +38951,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2018225813}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -264, y: -166}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 45, y: 12}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1240291545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39174,9 +39174,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1266434501}
   - component: {fileID: 1266434505}
-  - component: {fileID: 1266434504}
   - component: {fileID: 1266434503}
   - component: {fileID: 1266434502}
+  - component: {fileID: 1266434506}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -39285,18 +39285,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1266434504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266434500}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1266434505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39320,7 +39308,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -39348,6 +39336,18 @@ MonoBehaviour:
   - {x: 2.3832288, y: -2.8719933, z: 0}
   - {x: 4.1673675, y: 0.74784565, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1266434506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266434500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1275355172
 GameObject:
   m_ObjectHideFlags: 0
@@ -39612,9 +39612,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1324995602}
   - component: {fileID: 1324995606}
-  - component: {fileID: 1324995605}
   - component: {fileID: 1324995604}
   - component: {fileID: 1324995603}
+  - component: {fileID: 1324995607}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -39717,18 +39717,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1324995605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324995601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1324995606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39752,7 +39740,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -39780,6 +39768,18 @@ MonoBehaviour:
   - {x: 4.354619, y: -1.5003024, z: 0}
   - {x: 4.7205563, y: 1.1352524, z: 0}
   - {x: 4.5152926, y: 3.9200768, z: 0}
+--- !u!114 &1324995607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324995601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1332785633
 GameObject:
   m_ObjectHideFlags: 0
@@ -39790,9 +39790,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1332785634}
   - component: {fileID: 1332785638}
-  - component: {fileID: 1332785637}
   - component: {fileID: 1332785636}
   - component: {fileID: 1332785635}
+  - component: {fileID: 1332785639}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -39893,18 +39893,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1332785637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332785633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1332785638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39928,7 +39916,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -39957,6 +39945,18 @@ MonoBehaviour:
   - {x: 2.9275513, y: 2.5004032, z: 0}
   - {x: -1.9417279, y: -0.28914326, z: 0}
   - {x: -6.7256513, y: 0.90037405, z: 0}
+--- !u!114 &1332785639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332785633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1342734687
 GameObject:
   m_ObjectHideFlags: 0
@@ -40052,9 +40052,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1348341332}
   - component: {fileID: 1348341336}
-  - component: {fileID: 1348341335}
   - component: {fileID: 1348341334}
   - component: {fileID: 1348341333}
+  - component: {fileID: 1348341337}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -40160,18 +40160,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1348341335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1348341331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1348341336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40195,7 +40183,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -40223,6 +40211,18 @@ MonoBehaviour:
   - {x: 3.2296154, y: -4.1831613, z: 0}
   - {x: 2.9364855, y: 0.5052456, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1348341337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348341331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1367830778
 GameObject:
   m_ObjectHideFlags: 0
@@ -40233,9 +40233,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1367830779}
   - component: {fileID: 1367830783}
-  - component: {fileID: 1367830782}
   - component: {fileID: 1367830781}
   - component: {fileID: 1367830780}
+  - component: {fileID: 1367830784}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -40341,18 +40341,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1367830782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367830778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1367830783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40376,7 +40364,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -40407,6 +40395,18 @@ MonoBehaviour:
   - {x: 1.4131674, y: 0.051108148, z: 0}
   - {x: 0.13043436, y: 1.227458, z: 0}
   - {x: -1.8682487, y: 1.8297863, z: 0}
+--- !u!114 &1367830784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367830778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1384963745
 GameObject:
   m_ObjectHideFlags: 0
@@ -40502,9 +40502,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1398535108}
   - component: {fileID: 1398535112}
-  - component: {fileID: 1398535111}
   - component: {fileID: 1398535110}
   - component: {fileID: 1398535109}
+  - component: {fileID: 1398535113}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -40605,18 +40605,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1398535111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398535107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1398535112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40640,7 +40628,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -40668,6 +40656,18 @@ MonoBehaviour:
   - {x: 0.2719846, y: -7.688124, z: 0}
   - {x: 0.30526137, y: -0.14957286, z: 0}
   - {x: -1.0630859, y: 0.7694207, z: 0}
+--- !u!114 &1398535113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398535107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1405587486
 GameObject:
   m_ObjectHideFlags: 0
@@ -41086,9 +41086,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1469071223}
   - component: {fileID: 1469071227}
-  - component: {fileID: 1469071226}
   - component: {fileID: 1469071225}
   - component: {fileID: 1469071224}
+  - component: {fileID: 1469071228}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -41191,18 +41191,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1469071226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469071222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1469071227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41226,7 +41214,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -41254,6 +41242,18 @@ MonoBehaviour:
   - {x: 3.5410867, y: -5.4534297, z: 0}
   - {x: 4.0185647, y: 0.7918945, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1469071228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469071222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1481229252
 GameObject:
   m_ObjectHideFlags: 0
@@ -41349,9 +41349,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1498655678}
   - component: {fileID: 1498655682}
-  - component: {fileID: 1498655681}
   - component: {fileID: 1498655680}
   - component: {fileID: 1498655679}
+  - component: {fileID: 1498655683}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -41457,18 +41457,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1498655681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1498655677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1498655682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41492,7 +41480,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -41520,6 +41508,18 @@ MonoBehaviour:
   - {x: 4.4518495, y: -5.115256, z: 0}
   - {x: 2.8722832, y: -3.5123777, z: 0}
   - {x: -1.4731182, y: 0.5970016, z: 0}
+--- !u!114 &1498655683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498655677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1517437154
 GameObject:
   m_ObjectHideFlags: 0
@@ -41700,9 +41700,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1548446972}
   - component: {fileID: 1548446976}
-  - component: {fileID: 1548446975}
   - component: {fileID: 1548446974}
   - component: {fileID: 1548446973}
+  - component: {fileID: 1548446977}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -41801,18 +41801,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1548446975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548446971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1548446976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41836,7 +41824,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -41864,6 +41852,18 @@ MonoBehaviour:
   - {x: 2.7454116, y: -4.4551463, z: 0}
   - {x: 3.793009, y: 0.4564828, z: 0}
   - {x: 0.4015502, y: 3.6004303, z: 0}
+--- !u!114 &1548446977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548446971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1554395012
 GameObject:
   m_ObjectHideFlags: 0
@@ -41874,9 +41874,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1554395013}
   - component: {fileID: 1554395017}
-  - component: {fileID: 1554395016}
   - component: {fileID: 1554395015}
   - component: {fileID: 1554395014}
+  - component: {fileID: 1554395018}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -41979,18 +41979,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1554395016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554395012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1554395017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42014,7 +42002,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -42042,6 +42030,18 @@ MonoBehaviour:
   - {x: 5.960698, y: -6.5989823, z: 0}
   - {x: 4.2759957, y: 0.8332535, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1554395018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554395012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1554892142
 GameObject:
   m_ObjectHideFlags: 0
@@ -42097,9 +42097,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1596305418}
   - component: {fileID: 1596305422}
-  - component: {fileID: 1596305421}
   - component: {fileID: 1596305420}
   - component: {fileID: 1596305419}
+  - component: {fileID: 1596305423}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -42198,18 +42198,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1596305421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596305417}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1596305422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42233,7 +42221,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -42261,6 +42249,18 @@ MonoBehaviour:
   - {x: 1.7123724, y: -4.4323254, z: 0}
   - {x: 1.7448426, y: 0.56952125, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1596305423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596305417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1601117207
 GameObject:
   m_ObjectHideFlags: 0
@@ -42271,9 +42271,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1601117208}
   - component: {fileID: 1601117212}
-  - component: {fileID: 1601117211}
   - component: {fileID: 1601117210}
   - component: {fileID: 1601117209}
+  - component: {fileID: 1601117213}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -42379,18 +42379,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1601117211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601117207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1601117212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42414,7 +42402,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -42442,6 +42430,18 @@ MonoBehaviour:
   - {x: 3.1633103, y: -4.1229253, z: 0}
   - {x: 1.8441901, y: -0.61245036, z: 0}
   - {x: -1.4741118, y: 5.1608324, z: 0}
+--- !u!114 &1601117213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601117207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1618658198
 GameObject:
   m_ObjectHideFlags: 0
@@ -42537,9 +42537,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1627412861}
   - component: {fileID: 1627412865}
-  - component: {fileID: 1627412864}
   - component: {fileID: 1627412863}
   - component: {fileID: 1627412862}
+  - component: {fileID: 1627412866}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -42646,18 +42646,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1627412864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1627412860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1627412865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42681,7 +42669,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -42709,6 +42697,18 @@ MonoBehaviour:
   - {x: 1.9379607, y: -7.2977858, z: 0}
   - {x: 0.27730057, y: 0.51318073, z: 0}
   - {x: -8.325493, y: 0.6940021, z: 0}
+--- !u!114 &1627412866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627412860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1634446341
 GameObject:
   m_ObjectHideFlags: 0
@@ -42804,9 +42804,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1655714693}
   - component: {fileID: 1655714697}
-  - component: {fileID: 1655714696}
   - component: {fileID: 1655714695}
   - component: {fileID: 1655714694}
+  - component: {fileID: 1655714698}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -42910,18 +42910,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1655714696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655714692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1655714697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42945,7 +42933,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -42973,6 +42961,18 @@ MonoBehaviour:
   - {x: 1.1596222, y: -5.3709025, z: 0}
   - {x: 0.8845847, y: 0.23733023, z: 0}
   - {x: -2.1047025, y: 3.2153912, z: 0}
+--- !u!114 &1655714698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655714692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1685831198
 GameObject:
   m_ObjectHideFlags: 0
@@ -43115,9 +43115,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1690660705}
   - component: {fileID: 1690660709}
-  - component: {fileID: 1690660708}
   - component: {fileID: 1690660707}
   - component: {fileID: 1690660706}
+  - component: {fileID: 1690660710}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -43218,18 +43218,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1690660708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1690660704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1690660709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43253,7 +43241,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -43281,6 +43269,18 @@ MonoBehaviour:
   - {x: 10.196869, y: -4.536286, z: 0}
   - {x: 7.0544033, y: 2.1440964, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1690660710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690660704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1702227335
 GameObject:
   m_ObjectHideFlags: 0
@@ -43508,9 +43508,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1714121719}
   - component: {fileID: 1714121723}
-  - component: {fileID: 1714121722}
   - component: {fileID: 1714121721}
   - component: {fileID: 1714121720}
+  - component: {fileID: 1714121724}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -43611,18 +43611,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1714121722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1714121718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1714121723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43646,7 +43634,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -43674,6 +43662,18 @@ MonoBehaviour:
   - {x: 6.72512, y: -4.7875624, z: 0}
   - {x: 6.8797536, y: -0.9805691, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1714121724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714121718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1726107187
 GameObject:
   m_ObjectHideFlags: 0
@@ -43684,9 +43684,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1726107188}
   - component: {fileID: 1726107192}
-  - component: {fileID: 1726107191}
   - component: {fileID: 1726107190}
   - component: {fileID: 1726107189}
+  - component: {fileID: 1726107193}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -43792,18 +43792,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1726107191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726107187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1726107192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43827,7 +43815,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -43855,6 +43843,18 @@ MonoBehaviour:
   - {x: 2.053738, y: -4.3344116, z: 0}
   - {x: 1.8406272, y: 0.6053507, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1726107193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726107187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1733384150
 GameObject:
   m_ObjectHideFlags: 0
@@ -43865,9 +43865,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1733384151}
   - component: {fileID: 1733384155}
-  - component: {fileID: 1733384154}
   - component: {fileID: 1733384153}
   - component: {fileID: 1733384152}
+  - component: {fileID: 1733384156}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -43966,18 +43966,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1733384154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733384150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1733384155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44001,7 +43989,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -44029,6 +44017,18 @@ MonoBehaviour:
   - {x: 8.667492, y: -3.4887052, z: 0}
   - {x: 8.75154, y: 0.6586838, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1733384156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733384150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1734036980
 GameObject:
   m_ObjectHideFlags: 0
@@ -44123,9 +44123,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1737965741}
   - component: {fileID: 1737965745}
-  - component: {fileID: 1737965744}
   - component: {fileID: 1737965743}
   - component: {fileID: 1737965742}
+  - component: {fileID: 1737965746}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -44228,18 +44228,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1737965744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1737965740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1737965745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44263,7 +44251,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -44291,6 +44279,18 @@ MonoBehaviour:
   - {x: 8.830882, y: -4.387745, z: 0}
   - {x: 8.75154, y: 0.6586838, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1737965746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737965740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1761649230
 GameObject:
   m_ObjectHideFlags: 0
@@ -44424,9 +44424,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1769214335}
   - component: {fileID: 1769214339}
-  - component: {fileID: 1769214338}
   - component: {fileID: 1769214337}
   - component: {fileID: 1769214336}
+  - component: {fileID: 1769214340}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -44527,18 +44527,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1769214338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769214334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1769214339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44562,7 +44550,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -44590,6 +44578,18 @@ MonoBehaviour:
   - {x: 2.5323076, y: -2.2924414, z: 0}
   - {x: 8.75154, y: 0.6586838, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1769214340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769214334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1777061429
 GameObject:
   m_ObjectHideFlags: 0
@@ -44934,9 +44934,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1863551625}
   - component: {fileID: 1863551629}
-  - component: {fileID: 1863551628}
   - component: {fileID: 1863551627}
   - component: {fileID: 1863551626}
+  - component: {fileID: 1863551630}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -45038,18 +45038,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1863551628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863551624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1863551629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45073,7 +45061,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -45101,6 +45089,18 @@ MonoBehaviour:
   - {x: 0.49690276, y: -1.3169737, z: 0}
   - {x: 1.4965119, y: 1.2817395, z: 0}
   - {x: -1.2813113, y: 3.6597786, z: 0}
+--- !u!114 &1863551630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863551624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1908319794
 GameObject:
   m_ObjectHideFlags: 0
@@ -45281,9 +45281,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1913414154}
   - component: {fileID: 1913414158}
-  - component: {fileID: 1913414157}
   - component: {fileID: 1913414156}
   - component: {fileID: 1913414155}
+  - component: {fileID: 1913414159}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -45387,18 +45387,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1913414157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913414153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1913414158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45422,7 +45410,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -45450,6 +45438,18 @@ MonoBehaviour:
   - {x: 2.0714095, y: -5.028884, z: 0}
   - {x: 5.3271427, y: -0.089312494, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1913414159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913414153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1960725660
 GameObject:
   m_ObjectHideFlags: 0
@@ -45460,9 +45460,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1960725661}
   - component: {fileID: 1960725665}
-  - component: {fileID: 1960725664}
   - component: {fileID: 1960725663}
   - component: {fileID: 1960725662}
+  - component: {fileID: 1960725666}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -45564,18 +45564,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1960725664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1960725660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1960725665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45599,7 +45587,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -45627,6 +45615,18 @@ MonoBehaviour:
   - {x: 6.7921114, y: -6.2167854, z: 0}
   - {x: 6.508892, y: 1.0854605, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1960725666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960725660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1969355844
 GameObject:
   m_ObjectHideFlags: 0
@@ -45892,9 +45892,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1978606004}
   - component: {fileID: 1978606008}
-  - component: {fileID: 1978606007}
   - component: {fileID: 1978606006}
   - component: {fileID: 1978606005}
+  - component: {fileID: 1978606009}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -45998,18 +45998,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1978606007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1978606003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1978606008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46033,7 +46021,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -46061,6 +46049,18 @@ MonoBehaviour:
   - {x: 5.448467, y: 2.0036929, z: 0}
   - {x: 1.9866996, y: 2.5350707, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1978606009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978606003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1982315282
 GameObject:
   m_ObjectHideFlags: 0
@@ -46360,9 +46360,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2019586000}
   - component: {fileID: 2019586004}
-  - component: {fileID: 2019586003}
   - component: {fileID: 2019586002}
   - component: {fileID: 2019586001}
+  - component: {fileID: 2019586005}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -46462,18 +46462,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &2019586003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019585999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2019586004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46497,7 +46485,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -46525,6 +46513,18 @@ MonoBehaviour:
   - {x: 4.1268883, y: -1.7168005, z: 0}
   - {x: 8.75154, y: 0.6586838, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &2019586005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019585999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2019945533
 GameObject:
   m_ObjectHideFlags: 0
@@ -46535,9 +46535,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2019945534}
   - component: {fileID: 2019945538}
-  - component: {fileID: 2019945537}
   - component: {fileID: 2019945536}
   - component: {fileID: 2019945535}
+  - component: {fileID: 2019945539}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -46641,18 +46641,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &2019945537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019945533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2019945538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46676,7 +46664,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -46704,6 +46692,162 @@ MonoBehaviour:
   - {x: 1.4851542, y: -5.2024093, z: 0}
   - {x: 1.7463493, y: 1.9388746, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &2019945539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019945533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2043068110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2043068114}
+  - component: {fileID: 2043068113}
+  - component: {fileID: 2043068112}
+  - component: {fileID: 2043068111}
+  m_Layer: 0
+  m_Name: WinState
+  m_TagString: Win
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &2043068111
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043068110}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &2043068112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043068110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7652d2b314d89aa449d1ff7c3c93cf9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 2062475794}
+--- !u!212 &2043068113
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043068110}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0.27450988, g: 0.7921569, b: 0.43957078, a: 0.34117648}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &2043068114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043068110}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -90.7, y: -31.68, z: -0.27}
+  m_LocalScale: {x: 2.99625, y: 2.6375, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2056187321
 GameObject:
   m_ObjectHideFlags: 0
@@ -46799,7 +46943,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2062475793}
   - component: {fileID: 2062475791}
-  - component: {fileID: 2062475790}
   - component: {fileID: 2062475795}
   - component: {fileID: 2062475794}
   m_Layer: 0
@@ -46809,20 +46952,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2062475790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062475787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d92d31152b6ead42981b2177e06d114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1161905368}
-  lastCheckPoint: {x: -12.2, y: -3.43}
 --- !u!114 &2062475791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46891,9 +47020,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2063106318}
   - component: {fileID: 2063106322}
-  - component: {fileID: 2063106321}
   - component: {fileID: 2063106320}
   - component: {fileID: 2063106319}
+  - component: {fileID: 2063106323}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -46993,18 +47122,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &2063106321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2063106317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2063106322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47028,7 +47145,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -47056,6 +47173,18 @@ MonoBehaviour:
   - {x: 2.3504696, y: -2.449823, z: 0}
   - {x: 2.271122, y: 0.8626746, z: 0}
   - {x: -5.829285, y: 0.80598843, z: 0}
+--- !u!114 &2063106323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063106317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2075456532
 GameObject:
   m_ObjectHideFlags: 0
@@ -47066,9 +47195,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2075456533}
   - component: {fileID: 2075456537}
-  - component: {fileID: 2075456536}
   - component: {fileID: 2075456535}
   - component: {fileID: 2075456534}
+  - component: {fileID: 2075456538}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -47171,18 +47300,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &2075456536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2075456532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2075456537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47206,7 +47323,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -47234,6 +47351,18 @@ MonoBehaviour:
   - {x: -0.34740555, y: -2.501814, z: 0}
   - {x: 1.1498892, y: 0.59132946, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &2075456538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075456532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2081704664
 GameObject:
   m_ObjectHideFlags: 0
@@ -47244,9 +47373,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2081704665}
   - component: {fileID: 2081704669}
-  - component: {fileID: 2081704668}
   - component: {fileID: 2081704667}
   - component: {fileID: 2081704666}
+  - component: {fileID: 2081704670}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -47347,18 +47476,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &2081704668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081704664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2081704669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47382,7 +47499,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -47410,6 +47527,18 @@ MonoBehaviour:
   - {x: 4.355338, y: -2.2346985, z: 0}
   - {x: 4.616527, y: 1.4733481, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &2081704670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081704664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2083836760
 GameObject:
   m_ObjectHideFlags: 0
@@ -47420,9 +47549,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2083836761}
   - component: {fileID: 2083836765}
-  - component: {fileID: 2083836764}
   - component: {fileID: 2083836763}
   - component: {fileID: 2083836762}
+  - component: {fileID: 2083836766}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -47527,18 +47656,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &2083836764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2083836760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2083836765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47562,7 +47679,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -47590,6 +47707,18 @@ MonoBehaviour:
   - {x: -0.95114094, y: -3.750729, z: 0}
   - {x: 1.4360439, y: 1.128064, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &2083836766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083836760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2103359557
 GameObject:
   m_ObjectHideFlags: 0
@@ -47600,9 +47729,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2103359558}
   - component: {fileID: 2103359562}
-  - component: {fileID: 2103359561}
   - component: {fileID: 2103359560}
   - component: {fileID: 2103359559}
+  - component: {fileID: 2103359563}
   m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
@@ -47706,18 +47835,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &2103359561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103359557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfab3abfc47283a48b95cec155558533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2103359562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47741,7 +47858,7 @@ MonoBehaviour:
   m_ApplyToSortingLayers: 00000000877e67a53f74ebabab333cd055999222
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
-  m_LightOrder: 0
+  m_LightOrder: 3
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
@@ -47769,6 +47886,18 @@ MonoBehaviour:
   - {x: 2.6601434, y: -4.3877444, z: 0}
   - {x: 1.1371883, y: 0.5232473, z: 0}
   - {x: -3.1041656, y: 1.9897974, z: 0}
+--- !u!114 &2103359563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103359557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed5fad90172bfa4c8c0d61178d1b970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2124118851
 GameObject:
   m_ObjectHideFlags: 0
@@ -48035,3 +48164,4 @@ SceneRoots:
   - {fileID: 1766479126}
   - {fileID: 2018225813}
   - {fileID: 1161905368}
+  - {fileID: 2043068114}

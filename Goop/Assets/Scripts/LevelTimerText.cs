@@ -5,17 +5,34 @@ using UnityEngine;
 
 public class LevelTimerText : MonoBehaviour
 {
-    public TextMeshProUGUI[] levelTimeTexts; 
+    public TextMeshProUGUI completionTimesText;
+    private const int numberOfLevels = 2;
 
     void Start()
     {
-        for (int i = 0; i < StaticData.timeValuesToKeep.Length; i++)
-        {
-            float timeInSeconds = StaticData.timeValuesToKeep[i];
-            int minutes = Mathf.FloorToInt(timeInSeconds / 60);
-            int seconds = Mathf.FloorToInt(timeInSeconds % 60);
-            string timeString = string.Format("{0:00}:{1:00}", minutes, seconds);
-            levelTimeTexts[i].text = timeString;
-        }
+        DisplayCompletionTimes();
     }
+
+    void DisplayCompletionTimes()
+    {
+        string completionTimes = "Completion Times:\n";
+
+        for (int i = 1; i <= numberOfLevels; i++)
+        {
+            float completionTime = PlayerPrefs.GetFloat("Level" + i + "Time", -1f);
+            if (completionTime >= 0)
+            {
+                int minutes = Mathf.FloorToInt(completionTime / 60);
+                int seconds = Mathf.FloorToInt(completionTime % 60);
+                completionTimes += "Level " + i + ": " + string.Format("{0:00}:{1:00}", minutes, seconds) + "\n";
+            }
+            else
+            {
+                completionTimes += "Level " + i + ": Not Completed\n";
+            }
+        }
+
+        completionTimesText.text = completionTimes;
+    }
+
 }

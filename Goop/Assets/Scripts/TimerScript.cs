@@ -30,7 +30,6 @@ public class TimerScript : MonoBehaviour
         }
     }
 
-
     public void SetIsTimerRunning(bool shouldContinue)
     {
         isTimerRunning = shouldContinue;
@@ -38,9 +37,9 @@ public class TimerScript : MonoBehaviour
 
     public void SaveTimeForCurrentLevel(int levelIndex)
     {
-        StaticData.timeValuesToKeep[levelIndex] = currentTime;
+        PlayerPrefs.SetFloat("Level" + levelIndex + "Time", currentTime);
+        PlayerPrefs.Save();
     }
-
 
     public void ResetTimer() { currentTime = 0; }
 }

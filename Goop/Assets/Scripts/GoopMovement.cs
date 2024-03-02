@@ -18,7 +18,6 @@ public class GoopMovement : MonoBehaviour
     [SerializeField] public float playerSpeed = 4f;
     private float fallMultiplier = 2.5f;
     private float lowJumpMultiplier = 2.0f;
-    private float climbSpeed = 3.5f;
     private const float chargeTimeDecayDelay = 3.0f;
 
     public Animator animator;
@@ -39,20 +38,15 @@ public class GoopMovement : MonoBehaviour
     }
     private void Update()
     {
-        if (!pauseMenu.GetIsGamePaused() && !isGoopDead)
+        if (!pauseMenu.GetIsGamePaused())
         {
             HandleInput();
-
-            if (isClimbing)
-            {
-                Climb(Input.GetAxisRaw("Vertical"));
-            }
         }
     }
 
     private void FixedUpdate()
     {
-        if (!pauseMenu.GetIsGamePaused() && !isGoopDead && !isClimbing)
+        if (!pauseMenu.GetIsGamePaused())
         {
             ApplyPhysics();
         }
@@ -114,11 +108,6 @@ public class GoopMovement : MonoBehaviour
         {
             rigidBody.velocity += (lowJumpMultiplier - 1) * Physics2D.gravity.y * Time.fixedDeltaTime * Vector2.up;
         }
-    }
-
-    private void Climb(float verticalInput)
-    {
-        rigidBody.velocity = new Vector2(rigidBody.velocity.x, verticalInput * climbSpeed);
     }
 
     private void Flip(bool isFacingRight)

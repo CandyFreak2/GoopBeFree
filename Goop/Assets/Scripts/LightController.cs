@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public class LightController : MonoBehaviour
 {
@@ -14,6 +15,13 @@ public class LightController : MonoBehaviour
     {
         lightObject = GetComponent<Light2D>();
         lightObject.enabled = false;
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -60,6 +68,12 @@ public class LightController : MonoBehaviour
         }
 
         lightObject.color = new Color(lightObject.color.r, lightObject.color.g, lightObject.color.b, targetOpacity);
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        lightObject.enabled = false;
+        targetOpacity = 0f;
     }
 }
 
