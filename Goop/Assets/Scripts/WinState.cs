@@ -40,7 +40,7 @@ public class WinState : MonoBehaviour
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             timer.SaveTimeForCurrentLevel(currentSceneIndex);
 
-            SceneManager.LoadSceneAsync("WinGameScene");
+            SceneManager.LoadScene("WinGameScene");
         }
     }
 }

@@ -9,7 +9,7 @@ public class MenuScreen : MonoBehaviour
     public void PlayGame()
     {
         pauseMenu.SetIsGamePaused(false);
-        SceneManager.LoadSceneAsync("LevelOne");
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void LevelSelectButton()
