@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Levels/LevelTwo.unity
     guid: ce8523ce3a0166646bba7273867aed47
   - enabled: 1
+    path: Assets/Levels/EndCutscene.unity
+    guid: c717b769cd1b45749b0a44d977c70a92
+  - enabled: 1
     path: Assets/Levels/WinGameScene.unity
     guid: 2771cda4f70f68640be7e5a4b543b475
   m_configObjects: {}

@@ -12,6 +12,11 @@ public class MenuScreen : MonoBehaviour
         SceneManager.LoadScene("Cutscene");
     }
 
+    public void GoToWinScreen()
+    {
+        SceneManager.LoadScene("WinGameScene");
+    }
+
     public void PlayGame()
     {
         pauseMenu.SetIsGamePaused(false);

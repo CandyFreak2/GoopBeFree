@@ -40,8 +40,7 @@ public class WinState : MonoBehaviour
         if (hasWonLevelOne && hasWonLevelTwo)
         {
             timer.SetIsTimerRunning(false);
-            Debug.Log("Has Won Both Levels, Going to WinScene");
-            SceneManager.LoadScene("WinGameScene");
+            SceneManager.LoadScene("EndCutscene");
         }
     }
 }
