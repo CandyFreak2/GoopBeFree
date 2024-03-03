@@ -21,7 +21,6 @@ public class GoopMovement : MonoBehaviour
     private const float chargeTimeDecayDelay = 3.0f;
 
     public Animator animator;
-    AudioSource audioData;
 
     [SerializeField] private PauseMenu pauseMenu;
 
@@ -29,11 +28,6 @@ public class GoopMovement : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody2D>();
         pauseMenu = FindObjectOfType<PauseMenu>();
-    }
-
-    private void Start()
-    {
-        audioData = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -65,7 +59,6 @@ public class GoopMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             isJumping = true;
-            audioData.Play(0);
         }
 
         if (Input.GetKey(KeyCode.Space) && isJumping && chargeTime < maxChargeTime)
