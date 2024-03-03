@@ -10,49 +10,43 @@ public class GoopMovement : MonoBehaviour
     private static bool isClimbing = false;
 
     private static float chargeTime = 0.0f;
-    private static float maxChargeTime = 5.0f;
+    private static float maxChargeTime = 2.5f;
     private static float timeSinceLastCharge = 0.0f;
 
     private float minJumpForce = 2.5f;
-    private float maxJumpForce = 15.0f;
+    private float maxJumpForce = 7.5f;
     [SerializeField] public float playerSpeed = 4f;
     private float fallMultiplier = 2.5f;
     private float lowJumpMultiplier = 2.0f;
-    private float climbSpeed = 3.5f;
     private const float chargeTimeDecayDelay = 3.0f;
 
-    [SerializeField] private HealthSystem healthSystem;
-
     public Animator animator;
-
     AudioSource audioData;
+
+    [SerializeField] private PauseMenu pauseMenu;
 
     private void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        pauseMenu = FindObjectOfType<PauseMenu>();
     }
 
     private void Start()
     {
         audioData = GetComponent<AudioSource>();
-        
     }
+
     private void Update()
     {
-        if (!isGoopDead)
+        if (!pauseMenu.GetIsGamePaused())
         {
             HandleInput();
-
-            if (isClimbing)
-            {
-                Climb(Input.GetAxisRaw("Vertical"));
-            }
         }
     }
 
     private void FixedUpdate()
     {
-        if (!isGoopDead && !isClimbing)
+        if (!pauseMenu.GetIsGamePaused())
         {
             ApplyPhysics();
         }
@@ -77,7 +71,6 @@ public class GoopMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && isJumping && chargeTime < maxChargeTime)
         {
             animator.SetBool("ChargeJumping", true);
-            
             chargeTime += Time.deltaTime;
             timeSinceLastCharge = 0.0f;
         }
@@ -85,9 +78,7 @@ public class GoopMovement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space) && isJumping)
         {
             animator.SetBool("IsJumping", true);
-            
             Jump();
-            
         }
 
         if (!Input.GetKey(KeyCode.Space) && chargeTime > 0)
@@ -116,11 +107,6 @@ public class GoopMovement : MonoBehaviour
         }
     }
 
-    private void Climb(float verticalInput)
-    {
-        rigidBody.velocity = new Vector2(rigidBody.velocity.x, verticalInput * climbSpeed);
-    }
-
     private void Flip(bool isFacingRight)
     {
         if (GoopMovement.isFacingRight != isFacingRight)
@@ -139,8 +125,6 @@ public class GoopMovement : MonoBehaviour
         rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         isJumping = false;
         chargeTime = 0f;
-        
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -148,14 +132,12 @@ public class GoopMovement : MonoBehaviour
         if (collision.collider.CompareTag("Ground"))
         {
             isGrounded = true;
-
             OnLanding();
         }
         else if (collision.collider.CompareTag("Wall"))
         {
             isClimbing = true;
             OnLanding();
-
         }
     }
 
@@ -164,8 +146,6 @@ public class GoopMovement : MonoBehaviour
         if (collision.collider.CompareTag("Ground"))
         {
             isGrounded = false;
-            
-
         }
         else if (collision.collider.CompareTag("Wall"))
         {
@@ -173,19 +153,26 @@ public class GoopMovement : MonoBehaviour
         }
     }
 
-    public void OnLanding ()
+    public void OnLanding()
     {
         animator.SetBool("IsJumping", false);
         animator.SetBool("ChargeJumping", false);
+    }
+
+    public void SetIsGoopDead(bool isDead) => isGoopDead = isDead;
+
+    public void ResetFlip()
+    {
+        isFacingRight = true;
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
     }
 
     public float GetChargeTime() => chargeTime;
 
     public float GetMaxChargeTime() => maxChargeTime;
 
-    public bool IsJumping() => isJumping;
+    public bool GetIsJumping() => isJumping;
 
     public bool IsOnGround() => isGrounded;
 
-    public void SetIsGoopDead(bool isDead) => isGoopDead = isDead;
 }

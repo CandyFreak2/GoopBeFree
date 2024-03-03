@@ -1,16 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinState : MonoBehaviour
 {
-    public SpriteRenderer winText;
+    [SerializeField] public TimerScript timer;
 
-
-    private void Awake()
-    {
-        TurnOffWinText();
-    }
+    private bool hasWonLevelOne = false, hasWonLevelTwo = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -20,16 +15,32 @@ public class WinState : MonoBehaviour
             {
                 Debug.LogError("Player Script is Null");
             }
-            else
+
+            if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("LevelOne"))
             {
-                winText.enabled = true;
+                hasWonLevelOne = true;
+                Debug.Log("Completed level 1: " + hasWonLevelOne);
+            }
+            else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("LevelTwo"))
+            {
+                hasWonLevelTwo = true;
+                Debug.Log("Completed level 2: " + hasWonLevelTwo);
             }
         }
-    }
 
-    
-    public void TurnOffWinText()
-    {
-        winText.enabled = false; 
+        if (hasWonLevelOne || hasWonLevelTwo)
+        {
+            timer.SetIsTimerRunning(false);
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            timer.SaveTimeForCurrentLevel(currentSceneIndex);
+            Debug.Log("Time " + currentSceneIndex +": " + timer.currentTime);
+            SceneManager.LoadScene(currentSceneIndex + 1);
+        }
+
+        if (hasWonLevelOne && hasWonLevelTwo)
+        {
+            timer.SetIsTimerRunning(false);
+            SceneManager.LoadScene("EndCutscene");
+        }
     }
 }
