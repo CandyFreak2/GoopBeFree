@@ -35715,7 +35715,6 @@ GameObject:
   m_Component:
   - component: {fileID: 877141253}
   - component: {fileID: 877141254}
-  - component: {fileID: 877141256}
   - component: {fileID: 877141258}
   - component: {fileID: 877141259}
   m_Layer: 0
@@ -35754,18 +35753,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpBar: {fileID: 1584473985}
   goopMovement: {fileID: 1083191773}
---- !u!114 &877141256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877141251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d92d31152b6ead42981b2177e06d114, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &877141258
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -22,7 +22,7 @@ public class JumpManager : MonoBehaviour
     {
         if (goopMovement != null)
         {
-            if (goopMovement.IsJumping())
+            if (goopMovement.GetIsJumping())
             {
                 ChargeTimeBar();
             }
