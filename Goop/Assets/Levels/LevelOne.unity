@@ -184129,6 +184129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followSpeed: 2
+  fallSpeedMultiplier: 5
   player: {fileID: 1083191770}
   offset: {x: 0.5, y: 2}
 --- !u!114 &2064509759

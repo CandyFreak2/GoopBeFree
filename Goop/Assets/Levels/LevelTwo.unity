@@ -250915,7 +250915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc939facff322584f98ab95b1cbd39cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followSpeed: 3
+  followSpeed: 2
+  fallSpeedMultiplier: 3.5
   player: {fileID: 365352910}
   offset: {x: 0.5, y: 2}
 --- !u!114 &1405587488
