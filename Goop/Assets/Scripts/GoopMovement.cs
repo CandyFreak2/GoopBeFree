@@ -48,39 +48,42 @@ public class GoopMovement : MonoBehaviour
 
     private void HandleInput()
     {
-        float horizontalMovement = Input.GetAxisRaw("Horizontal");
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMovement));
-
-        if (horizontalMovement != 0 && !isClimbing)
+        if (!isGoopDead)
         {
-            Flip(horizontalMovement > 0);
-        }
+            float horizontalMovement = Input.GetAxisRaw("Horizontal");
+            animator.SetFloat("Speed", Mathf.Abs(horizontalMovement));
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            isJumping = true;
-        }
-
-        if (Input.GetKey(KeyCode.Space) && isJumping && chargeTime < maxChargeTime)
-        {
-            animator.SetBool("ChargeJumping", true);
-            chargeTime += Time.deltaTime;
-            timeSinceLastCharge = 0.0f;
-        }
-
-        if (Input.GetKeyUp(KeyCode.Space) && isJumping)
-        {
-            animator.SetBool("IsJumping", true);
-            Jump();
-        }
-
-        if (!Input.GetKey(KeyCode.Space) && chargeTime > 0)
-        {
-            timeSinceLastCharge += Time.deltaTime;
-            if (timeSinceLastCharge >= chargeTimeDecayDelay)
+            if (horizontalMovement != 0 && !isClimbing)
             {
-                chargeTime -= Time.deltaTime;
-                chargeTime = Mathf.Max(chargeTime, 0.0f);
+                Flip(horizontalMovement > 0);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            {
+                isJumping = true;
+            }
+
+            if (Input.GetKey(KeyCode.Space) && isJumping && chargeTime < maxChargeTime)
+            {
+                animator.SetBool("ChargeJumping", true);
+                chargeTime += Time.deltaTime;
+                timeSinceLastCharge = 0.0f;
+            }
+
+            if (Input.GetKeyUp(KeyCode.Space) && isJumping)
+            {
+                animator.SetBool("IsJumping", true);
+                Jump();
+            }
+
+            if (!Input.GetKey(KeyCode.Space) && chargeTime > 0)
+            {
+                timeSinceLastCharge += Time.deltaTime;
+                if (timeSinceLastCharge >= chargeTimeDecayDelay)
+                {
+                    chargeTime -= Time.deltaTime;
+                    chargeTime = Mathf.Max(chargeTime, 0.0f);
+                }
             }
         }
     }
