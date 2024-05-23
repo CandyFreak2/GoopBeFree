@@ -21,6 +21,11 @@ public class MenuScreen : MonoBehaviour
         SceneManager.LoadScene("LevelOne");
     }
 
+    public void PlayTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
     public void LevelSelectButton()
     {
         Time.timeScale = 0f;
