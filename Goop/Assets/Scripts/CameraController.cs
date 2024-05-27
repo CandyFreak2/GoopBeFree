@@ -1,20 +1,20 @@
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
-{
-    [SerializeField] private float followSpeed;
-    [SerializeField] private float fallSpeedMultiplier;
-    public Transform player;
-    public Vector2 offset;
+public class CameraController : MonoBehaviour {
+    [SerializeField] private float followSpeed = 5f;
+    [SerializeField] private float fallSpeedMultiplier = 2f;
+    [SerializeField] private Vector2 offset;
 
-    void Update()
-    {
-        Vector3 newCameraPos = new(player.position.x + offset.x, player.position.y + offset.y, -10);
+    public Transform player;
+
+    private void FixedUpdate() {
+        Vector3 targetPos = new Vector3(player.position.x + offset.x, player.position.y + offset.y, -10f);
+        float speed = followSpeed;
 
         if (player.GetComponent<Rigidbody2D>().velocity.y < 0) {
-            transform.position = Vector3.Lerp(transform.position, newCameraPos, fallSpeedMultiplier * Time.deltaTime);
-        } else {
-            transform.position = Vector3.Lerp(transform.position, newCameraPos, followSpeed * Time.deltaTime);
+            speed *= fallSpeedMultiplier;
         }
+
+        transform.position = Vector3.Lerp(transform.position, targetPos, speed * Time.fixedDeltaTime);
     }
 }
