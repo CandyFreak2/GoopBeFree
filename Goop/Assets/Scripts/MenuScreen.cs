@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,6 +19,11 @@ public class MenuScreen : MonoBehaviour
     {
         pauseMenu.SetIsGamePaused(false);
         SceneManager.LoadScene("LevelOne");
+    }
+
+    public void PlayTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void LevelSelectButton()
