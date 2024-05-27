@@ -8,7 +8,7 @@ public class CameraController : MonoBehaviour {
     public Transform player;
 
     private void FixedUpdate() {
-        Vector3 targetPos = new Vector3(player.position.x + offset.x, player.position.y + offset.y, -10f);
+        Vector3 targetPos = new(player.position.x + offset.x, player.position.y + offset.y, -10f);
         float speed = followSpeed;
 
         if (player.GetComponent<Rigidbody2D>().velocity.y < 0) {
