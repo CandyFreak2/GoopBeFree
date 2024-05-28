@@ -11,6 +11,7 @@ public class ShopManager : MonoBehaviour {
     public TextMeshProUGUI pointsText;
 
     void Start() {
+        points = PlayerPrefs.GetInt("Points");
         shopItems.Add(Tuple.Create(Ability.WINGS, 100, 1));
         shopItems.Add(Tuple.Create(Ability.FREEZE, 200, 1));
         shopItems.Add(Tuple.Create(Ability.WHIP, 300, 1));

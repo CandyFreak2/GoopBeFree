@@ -5,6 +5,14 @@ using UnityEngine;
 public class GoopPoints : MonoBehaviour {
     private int points;
 
+    void Start() {
+        points = PlayerPrefs.GetInt("Points");
+    }
+
+    void Update() {
+        points = PlayerPrefs.GetInt("Points");
+    }
+
     public void AddPoints(int pointToAdd) {
         points += pointToAdd;
         UpdatePoints();
