@@ -1,17 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+
 
 public class LoreInteractable : MonoBehaviour
 {
     public bool isWithinRange;
+    public GameObject keyIdentification, loreSprite;
 
     void Update()
     {
         if (isWithinRange)
         {
-            // figure out what happens
+            keyIdentification.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.E)) {
+                loreSprite.SetActive(!loreSprite.activeSelf);
+            }
+        }
+        else {
+            keyIdentification.SetActive(false);
         }
     }
 
